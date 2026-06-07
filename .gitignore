@@ -1,0 +1,30 @@
+# Python virtual environments
+.zoezi_venv/
+
+# Python cache and distribution files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Secret and configuration files (CRITICAL)
+.env
+.env.*
+!.env.example
+secrets.json
+
+# IDE and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated data output
+data/output/
+
