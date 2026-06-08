@@ -1,0 +1,4 @@
+shipment_id|supplier_id|supplier_name|carrier|origin_country|destination_country|shipment_date|delivery_status|units|unit_cost
+SHP001|SUP001|Northline Parts|DHL|Canada|USA|2026-06-01|Delivered|120|14.5
+SHP002|SUP002|Metro Packaging|FedEx|USA|Canada|2026-06-02|In Transit|80|9.75
+SHP006|SUP006|Summit Metals|UPS|USA|Canada|2026-06-06|Delivered|200|11.1

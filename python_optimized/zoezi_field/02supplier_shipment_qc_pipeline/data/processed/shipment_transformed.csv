@@ -1,0 +1,4 @@
+shipment_id|carrier|units|unit_cost|shipment_value|route|risk_level
+SHP001|DHL|120|14.5|1740.0|Canada → USA|low
+SHP002|FedEx|80|9.75|780.0|USA → Canada|medium
+SHP006|UPS|200|11.1|2220.0|USA → Canada|low

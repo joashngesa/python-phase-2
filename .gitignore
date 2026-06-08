@@ -24,7 +24,5 @@ secrets.json
 .idea/
 .DS_Store
 Thumbs.db
-
-# Generated data output
-data/output/
+ 
 

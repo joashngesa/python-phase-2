@@ -1,0 +1,8 @@
+shipment_id|supplier_id|supplier_name|carrier|origin_country|destination_country|shipment_date|delivery_status|units|unit_cost|error_reason
+SHP003|SUP003||UPS|Mexico|Canada|2026-06-03|Delivered|50|22.0|supplier_name is blank
+SHP004|SUP004|Apex Components|DHL|Canada|Germany|2026-06-04|Delayed||18.25|units is absent or incorrect
+SHP005|SUP005|Pacific Tools|FedEx|China|Canada|2026-06-05|Cancelled|30||unit_cost absent or incorrect
+SHP007|SUP007|Bright Logistics||Canada|USA|2026-06-07|Delivered|75|13.4|carrier is blank
+SHP008|SUP008|Orion Industrial|DHL|Canada|USA|2026-06-08|Lost|40|16.0|delivery_status must be one of Delivered,In Transit,Delayed,Cancelled
+SHP009|SUP009|Maple Supply Co|FedEx|Canada|UK|2026-06-09|Delivered|-10|12.0|units should be > than zero
+SHP010|SUP010|Evergreen Parts|UPS|USA|Canada|2026-06-10|Delayed|90||unit_cost absent or incorrect
