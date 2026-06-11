@@ -2,6 +2,7 @@ from tabulate import tabulate
 
 from src.config import INPUT_PATH
 from src.reader import read_json_file
+from src.extract import extract_data
 from src.convert import convert_data
 from src.validity_splitter import split_table
 from src.transform import transform_data
@@ -9,9 +10,13 @@ from src.summarizer import report
 
 raw = read_json_file(INPUT_PATH)
 print("raw file")
-print(tabulate(raw, headers="keys", tablefmt="grid"))
+print(raw)
 
-converted = convert_data(raw)
+data = extract_data(raw)
+print("\nextracted table")
+print(tabulate(data, headers="keys", tablefmt="grid"))
+
+converted = convert_data(data)
 print("\nconverted data")
 print(tabulate(converted, headers="keys", tablefmt="grid"))
 

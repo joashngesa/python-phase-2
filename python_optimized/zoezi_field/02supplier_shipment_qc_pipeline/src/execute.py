@@ -7,6 +7,7 @@ from src.config import TRANSFORMED_PATH
 from src.config import SUMMARY_PATH
 
 from src.reader import read_json_file
+from src.extract import extract_data
 from src.convert import convert_data
 from src.validity_splitter import split_table
 from src.transform import transform_data
@@ -26,7 +27,8 @@ summary_column = ["carrier", "shipment_count", "total_units", "total_shipment_va
 def execute_shipment_qc_pipeline(file_path, output_delimiter):
 
     raw = read_json_file (file_path)
-    converted = convert_data (raw)
+    data = extract_data(raw)
+    converted = convert_data (data)
     invalids, valids = split_table (converted)
     transformed = transform_data (valids)
     summary = report (transformed)

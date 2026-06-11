@@ -1,0 +1,128 @@
+{
+  "status": "success",
+  "source": "supplier_api",
+  "record_count": 10,
+  "generated_at": "2026-06-09T09:30:00",
+  "data": [
+    {
+      "shipment_id": "SHP001",
+      "supplier_id": "SUP001",
+      "supplier_name": "Northline Parts",
+      "carrier": "DHL",
+      "origin_country": "Canada",
+      "destination_country": "USA",
+      "shipment_date": "2026-06-01",
+      "delivery_status": "Delivered",
+      "units": "120",
+      "unit_cost": "14.50"
+    },
+    {
+      "shipment_id": "SHP002",
+      "supplier_id": "SUP002",
+      "supplier_name": "Metro Packaging",
+      "carrier": "FedEx",
+      "origin_country": "USA",
+      "destination_country": "Canada",
+      "shipment_date": "2026-06-02",
+      "delivery_status": "In Transit",
+      "units": "80",
+      "unit_cost": "9.75"
+    },
+    {
+      "shipment_id": "SHP003",
+      "supplier_id": "SUP003",
+      "supplier_name": "",
+      "carrier": "UPS",
+      "origin_country": "Mexico",
+      "destination_country": "Canada",
+      "shipment_date": "2026-06-03",
+      "delivery_status": "Delivered",
+      "units": "50",
+      "unit_cost": "22.00"
+    },
+    {
+      "shipment_id": "SHP004",
+      "supplier_id": "SUP004",
+      "supplier_name": "Apex Components",
+      "carrier": "DHL",
+      "origin_country": "Canada",
+      "destination_country": "Germany",
+      "shipment_date": "2026-06-04",
+      "delivery_status": "Delayed",
+      "units": "abc",
+      "unit_cost": "18.25"
+    },
+    {
+      "shipment_id": "SHP005",
+      "supplier_id": "SUP005",
+      "supplier_name": "Pacific Tools",
+      "carrier": "FedEx",
+      "origin_country": "China",
+      "destination_country": "Canada",
+      "shipment_date": "2026-06-05",
+      "delivery_status": "Cancelled",
+      "units": "30",
+      "unit_cost": ""
+    },
+    {
+      "shipment_id": "SHP006",
+      "supplier_id": "SUP006",
+      "supplier_name": "Summit Metals",
+      "carrier": "UPS",
+      "origin_country": "USA",
+      "destination_country": "Canada",
+      "shipment_date": "2026-06-06",
+      "delivery_status": "Delivered",
+      "units": "200",
+      "unit_cost": "11.10"
+    },
+    {
+      "shipment_id": "SHP007",
+      "supplier_id": "SUP007",
+      "supplier_name": "Bright Logistics",
+      "carrier": "",
+      "origin_country": "Canada",
+      "destination_country": "USA",
+      "shipment_date": "2026-06-07",
+      "delivery_status": "Delivered",
+      "units": "75",
+      "unit_cost": "13.40"
+    },
+    {
+      "shipment_id": "SHP008",
+      "supplier_id": "SUP008",
+      "supplier_name": "Orion Industrial",
+      "carrier": "DHL",
+      "origin_country": "Canada",
+      "destination_country": "USA",
+      "shipment_date": "2026-06-08",
+      "delivery_status": "Lost",
+      "units": "40",
+      "unit_cost": "16.00"
+    },
+    {
+      "shipment_id": "SHP009",
+      "supplier_id": "SUP009",
+      "supplier_name": "Maple Supply Co",
+      "carrier": "FedEx",
+      "origin_country": "Canada",
+      "destination_country": "UK",
+      "shipment_date": "2026-06-09",
+      "delivery_status": "Delivered",
+      "units": "-10",
+      "unit_cost": "12.00"
+    },
+    {
+      "shipment_id": "SHP010",
+      "supplier_id": "SUP010",
+      "supplier_name": "Evergreen Parts",
+      "carrier": "UPS",
+      "origin_country": "USA",
+      "destination_country": "Canada",
+      "shipment_date": "2026-06-10",
+      "delivery_status": "Delayed",
+      "units": "90",
+      "unit_cost": "bad_cost"
+    }
+  ]
+}
