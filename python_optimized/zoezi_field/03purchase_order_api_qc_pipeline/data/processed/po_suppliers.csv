@@ -1,0 +1,7 @@
+supplier_id|supplier_name|valid_line_count|total_ordered_qty|total_received_qty|total_ordered_value|total_received_value|total_shortage_qty|avg_receipt_rate
+SUP001|Northline Parts|2|240|238|4830.0|4817.5|2|0.99
+SUP002|Metro Packaging|1|500|350|550.0|385.00000000000006|150|0.7
+SUP005|Pacific Tools|1|30|0|2250.0|0.0|30|0.0
+SUP006|Summit Metals|1|1000|0|80.0|0.0|1000|0.0
+SUP011|Global Fasteners|1|800|790|40.0|39.5|10|0.99
+SUP013|Harbor Materials|1|100|80|1250.0|1000.0|20|0.8

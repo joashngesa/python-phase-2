@@ -1,0 +1,8 @@
+ordered_value|received_value|shortage_quantity|receipt_rate|fulfillment_status
+3580.0|3580.0|0|1.0|fully received
+1250.0|1237.5|2|0.99|short received
+550.0|385.00000000000006|150|0.7|short received
+2250.0|0.0|30|0.0|Not received
+80.0|0.0|1000|0.0|Cancelled
+40.0|39.5|10|0.9875|short received
+1250.0|1000.0|20|0.8|short received

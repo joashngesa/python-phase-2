@@ -29,9 +29,9 @@ def report(transformed):
         summary[carrier]["total_units"] += units
         summary[carrier]["total_shipment_value"] += shipment_value
 
-        for stockist in summary:
-            data = summary[stockist]
-            data["avg_shipment_value"] = round(data["total_shipment_value"] / data["shipment_count"],2)
+    for stockist in summary:
+        data = summary[stockist]
+        data["avg_shipment_value"] = round(data["total_shipment_value"] / data["shipment_count"],2)
 
     
     return list (summary.values())

@@ -1,0 +1,8 @@
+po_id|line_id|supplier_id|supplier_name|warehouse|sku|product|order_date|expected_delivery_date|order_status|quantity_ordered|quantity_received|unit_cost
+PO1001|1|SUP001|Northline Parts|WH_A|SKU-LAP-001|Laptop Docking Station|2026-06-01|2026-06-06|Received|40|40|89.5
+PO1001|2|SUP001|Northline Parts|WH_A|SKU-CAB-014|USB-C Cable|2026-06-01|2026-06-06|Received|200|198|6.25
+PO1002|1|SUP002|Metro Packaging|WH_B|SKU-BOX-020|Shipping Boxes|2026-06-02|2026-06-07|Partially Received|500|350|1.1
+PO1005|1|SUP005|Pacific Tools|WH_B|SKU-DRL-010|Cordless Drill|2026-06-05|2026-06-10|Open|30|0|75.0
+PO1006|1|SUP006|Summit Metals|WH_C|SKU-BLT-100|Steel Bolts|2026-06-06|2026-06-11|Cancelled|1000|0|0.08
+PO1011|1|SUP011|Global Fasteners|WH_A|SKU-NUT-050|Hex Nuts|2026-06-11|2026-06-16|Received|800|790|0.05
+PO1013|1|SUP013|Harbor Materials|WH_C|SKU-PAL-001|Wooden Pallets|2026-06-13|2026-06-18|Partially Received|100|80|12.5

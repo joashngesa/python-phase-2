@@ -1,0 +1,4 @@
+warehouse|valid_line_count|total_ordered_qty|total_received_qty|total_ordered_value|total_received_value|total_shortage_qty
+WH_A|3|1040|1028|4870.0|4857.0|12
+WH_B|2|530|350|2800.0|385.00000000000006|180
+WH_C|2|1100|80|1330.0|1000.0|1020

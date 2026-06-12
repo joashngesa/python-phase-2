@@ -1,0 +1,9 @@
+po_id|line_id|supplier_id|supplier_name|warehouse|sku|product|order_date|expected_delivery_date|order_status|quantity_ordered|quantity_received|unit_cost|error_reasons
+PO1003|1|SUP003||WH_C|SKU-TAPE-003|Packing Tape|2026-06-03|2026-06-08|Received|120|120|3.75|supplier_name is blank
+PO1004|1|SUP004|Apex Components|WH_A|SKU-MON-022|Monitor Stand|2026-06-04|2026-06-09|Received||60|24.0|quantity_ordered is missing or invalid
+PO1007|1|SUP007|Bright Logistics||SKU-LBL-007|Warehouse Labels|2026-06-07|2026-06-12|Received|250|250|0.3|warehouse is blank
+PO1008|1|SUP008|Orion Industrial|WH_A|SKU-CHR-002|Office Chair|2026-06-08|2026-06-13|Returned|25|25|110.0|allowed_status must be one of Open, Received, Partially Received, Cancelled
+PO1009|1|SUP009|Maple Supply Co|WH_B|SKU-WHL-005|Caster Wheels|2026-06-09|2026-06-14|Received|-10|10|4.5|quantity_ordered must be greater than zero: quantity_received cannot be greater than quantity_ordered
+PO1010|1|SUP010|Evergreen Parts|WH_C|SKU-SCN-011|Barcode Scanner|2026-06-10|2026-06-15|Received|15|18||quantity_received cannot be greater than quantity_ordered: unit_cost is missing or invalid
+PO1012|1|SUP012|Northern Office|WH_B|SKU-DSK-004|Standing Desk|2026-06-12|2026-06-17|Received|12|12||unit_cost is missing or invalid
+PO1001|1|SUP001|Northline Parts|WH_A|SKU-LAP-001|Laptop Docking Station|2026-06-01|2026-06-06|Received|40|40|89.5|duplicate po_id & line_id
