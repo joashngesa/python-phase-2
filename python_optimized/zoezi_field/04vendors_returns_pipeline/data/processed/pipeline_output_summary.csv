@@ -1,0 +1,2 @@
+source|status|generated_at|record_count|batch_id|extracted_record_count|valids_record_count|invalids_record_count|transformed_record_count|vendors_record_count|reasons_record_count
+vendor_returns_api|success|2026-06-14T08:30:00|16|RET-BATCH-20260614-001|16|7|9|7|6|4

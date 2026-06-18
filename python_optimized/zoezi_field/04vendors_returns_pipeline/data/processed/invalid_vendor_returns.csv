@@ -1,0 +1,10 @@
+return_id|line_id|vendor_id|vendor_name|warehouse|sku|product|return_date|received_date|return_reason|return_status|quantity_returned|quantity_accepted|unit_cost|error_reasons
+RET1003|1|VEN003||WH_C|SKU-TAPE-003|Packing Tape|2026-06-03|2026-06-05|Damaged|Received|15|15|3.75|vendor_name is blank
+RET1004|1|VEN004|Apex Components|WH_A|SKU-MON-022|Monitor Stand|2026/06/04|2026-06-06|Damaged|Received|8|8|24.0|return_date should be in date format
+RET1005|1|VEN005|Pacific Tools|WH_B|SKU-DRL-010|Cordless Drill|2026-06-05|2026-06-04|Wrong Item|Received|3|3|75.0|received_date can not be earlier than return_date
+RET1007|1|VEN007|Bright Logistics||SKU-LBL-007|Warehouse Labels|2026-06-07|2026-06-09|Damaged|Received|50|50|0.3|warehouse is blank
+RET1008|1|VEN008|Orion Industrial|WH_A|SKU-CHR-002|Office Chair|2026-06-08|2026-06-10|Customer Changed Mind|Received|4|4|110.0|return_reason must be one of Damaged, Wrong Item, Quality Issue, Overstock
+RET1009|1|VEN009|Maple Supply Co|WH_B|SKU-WHL-005|Caster Wheels|2026-06-09|2026-06-11|Wrong Item|Received|-10|10|4.5|quantity_returned should be greater than zero: quantity_accepted should be less than or equal to quantity_returned
+RET1010|1|VEN010|Evergreen Parts|WH_C|SKU-SCN-011|Barcode Scanner|2026-06-10|2026-06-12|Quality Issue|Received|2|3|bad_cost|quantity_accepted should be less than or equal to quantity_returned: unit_cost should be float
+RET1012|1|VEN012|Northern Office|WH_B|SKU-DSK-004|Standing Desk|2026-06-12|2026-06-14|Damaged|Received|1|1||unit_cost should be float
+RET1001|1|VEN001|Northline Parts|WH_A|SKU-LAP-001|Laptop Docking Station|2026-06-01|2026-06-03|Damaged|Received|5|4|89.5|duplicate return_id & line_id

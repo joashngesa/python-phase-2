@@ -16,8 +16,8 @@ def convert_data(data):
 
         line_id = refined.get("line_id")
         try:
-                refined["line_id"] = int(line_id) if not line_id in (None, "") else None
-        except (ValueError, TypeError):
+                refined["line_id"] = int(line_id) if line_id not in (None, "") else None
+        except ValueError:
                 refined["line_id"] = None
 
         qty_ordered = refined.get("quantity_ordered")

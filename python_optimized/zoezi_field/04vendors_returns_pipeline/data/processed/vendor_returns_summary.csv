@@ -1,0 +1,7 @@
+vendor_id|vendor_name|valid_line_count|total_returned_qty|total_accepted_qty|total_rejected_qty|total_return_value|total_accepted_value|avg_acceptance_rate
+VEN001|Northline Parts|2|25|24|1|572.5|483.0|0
+VEN002|Metro Packaging|1|100|75|25|110.00000000000001|82.5|0
+VEN006|Summit Metals|1|200|0|200|16.0|0.0|0
+VEN011|Global Fasteners|1|500|0|500|25.0|0.0|0
+VEN013|Harbor Materials|1|10|8|2|125.0|100.0|0
+VEN014|Prairie Components|1|6|6|0|210.0|210.0|1.0

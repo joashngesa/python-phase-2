@@ -1,0 +1,8 @@
+return_id|line_id|vendor_id|vendor_name|warehouse|sku|product|return_date|received_date|return_reason|return_status|quantity_returned|quantity_accepted|unit_cost
+RET1001|1|VEN001|Northline Parts|WH_A|SKU-LAP-001|Laptop Docking Station|2026-06-01|2026-06-03|Damaged|Received|5|4|89.5
+RET1001|2|VEN001|Northline Parts|WH_A|SKU-CAB-014|USB-C Cable|2026-06-01|2026-06-02|Wrong Item|Received|20|20|6.25
+RET1002|1|VEN002|Metro Packaging|WH_B|SKU-BOX-020|Shipping Boxes|2026-06-02|2026-06-05|Quality Issue|Received|100|75|1.1
+RET1006|1|VEN006|Summit Metals|WH_C|SKU-BLT-100|Steel Bolts|2026-06-06||Overstock|Pending|200|0|0.08
+RET1011|1|VEN011|Global Fasteners|WH_A|SKU-NUT-050|Hex Nuts|2026-06-11|2026-06-13|Overstock|Rejected|500|0|0.05
+RET1013|1|VEN013|Harbor Materials|WH_C|SKU-PAL-001|Wooden Pallets|2026-06-13|2026-06-16|Overstock|Received|10|8|12.5
+RET1014|1|VEN014|Prairie Components|WH_A|SKU-CMP-014|Control Module|2026-06-14|2026-06-17|Damaged|Closed|6|6|35.0
