@@ -44,12 +44,12 @@ def vendor_summary(vendor_tbl):
         vendors[vendor_id]["total_accepted_value"] += accepted_value
 
     for depo in vendors:
-        distro = vendors[vendor_id]
+        distro = vendors[depo]
 
         if distro["total_returned_qty"] > 0:
             distro["avg_acceptance_rate"] = distro["total_accepted_qty"] / distro["total_returned_qty"]
         else:
-                distro["avg_acceptance_rate"] == 0.0
+                distro["avg_acceptance_rate"] = 0.0
 
             
     return list(vendors.values())

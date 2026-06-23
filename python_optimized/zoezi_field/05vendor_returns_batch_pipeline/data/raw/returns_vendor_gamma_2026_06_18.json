@@ -1,0 +1,54 @@
+[
+  {
+    "return_id": "RET009",
+    "vendor_id": "V003",
+    "vendor_name": "Gamma Parts",
+    "warehouse": "WH_E",
+    "product_sku": "SKU300",
+    "product_name": "Printer Ink",
+    "return_date": "2026-06-16",
+    "reason": "Damaged",
+    "quantity": "15",
+    "unit_cost": "18.20",
+    "status": "Received"
+  },
+  {
+    "return_id": "",
+    "vendor_id": "V003",
+    "vendor_name": "Gamma Parts",
+    "warehouse": "WH_E",
+    "product_sku": "SKU301",
+    "product_name": "Paper Tray",
+    "return_date": "2026-06-16",
+    "reason": "Defective",
+    "quantity": "4",
+    "unit_cost": "42.00",
+    "status": "Received"
+  },
+  {
+    "return_id": "RET011",
+    "vendor_id": "V003",
+    "vendor_name": "Gamma Parts",
+    "warehouse": "WH_F",
+    "product_sku": "SKU302",
+    "product_name": "Toner Cartridge",
+    "return_date": "2026-06-16",
+    "reason": "Expired",
+    "quantity": "7",
+    "unit_cost": "65.00",
+    "status": "Received"
+  },
+  {
+    "return_id": "RET012",
+    "vendor_id": "V003",
+    "vendor_name": "Gamma Parts",
+    "warehouse": "WH_F",
+    "product_sku": "SKU303",
+    "product_name": "Scanner",
+    "return_date": "2026-06-16",
+    "reason": "Wrong Item",
+    "quantity": "-2",
+    "unit_cost": "120.00",
+    "status": "Pending"
+  }
+]

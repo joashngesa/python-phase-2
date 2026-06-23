@@ -1,9 +1,0 @@
-sku|product|warehouse|quantity|unit_cost
-SKU001|Laptop|WH_A|10|900
-SKU002|Mouse|WH_B|50|15
-SKU003|Keyboard|WH_A|30
-SKU004|Monitor|WH_C|20|200
-SKU005|Chair|WH_B|15|85
-BROKEN_ROW
-SKU006|Desk|WH_A|5|300|EXTRA_FIELD
-SKU007|Tablet|WH_C|12|250

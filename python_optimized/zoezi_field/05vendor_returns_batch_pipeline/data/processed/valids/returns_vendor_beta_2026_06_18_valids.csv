@@ -1,0 +1,2 @@
+return_id|vendor_id|vendor_name|warehouse|product_sku|product_name|return_date|reason|quantity|unit_cost|status
+RET005|V002|Beta Logistics|WH_C|SKU200|USB Cable|2026-06-17|Wrong Item|20|4.25|Received

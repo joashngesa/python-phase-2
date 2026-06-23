@@ -1,0 +1,3 @@
+return_id|vendor_id|vendor_name|warehouse|product_sku|product_name|return_date|reason|quantity|unit_cost|status|error_reasons
+|V003|Gamma Parts|WH_E|SKU301|Paper Tray|2026-06-16|Defective|4|42.0|Received|return_id is blank
+RET012|V003|Gamma Parts|WH_F|SKU303|Scanner|2026-06-16|Wrong Item|-2|120.0|Pending|quantity should be greater than zero

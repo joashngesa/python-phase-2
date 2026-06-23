@@ -129,7 +129,7 @@ def data_validation(revert):
     elif not return_status.strip():
         reasons.append ("return_status is blank")
     elif return_status not in ALLOWED_STATUSES:
-        reasons.append (f"return_status must be one of {ALLOWED_STATUSES}")
+        reasons.append (f"return_status must be one of {', '.join(ALLOWED_STATUSES)}")
 
     ##Numeric rules
     #line_id > 0

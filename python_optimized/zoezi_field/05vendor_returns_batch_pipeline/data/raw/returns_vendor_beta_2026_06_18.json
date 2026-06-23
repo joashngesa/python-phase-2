@@ -1,0 +1,54 @@
+[
+  {
+    "return_id": "RET005",
+    "vendor_id": "V002",
+    "vendor_name": "Beta Logistics",
+    "warehouse": "WH_C",
+    "product_sku": "SKU200",
+    "product_name": "USB Cable",
+    "return_date": "2026-06-17",
+    "reason": "Wrong Item",
+    "quantity": "20",
+    "unit_cost": "4.25",
+    "status": "Received"
+  },
+  {
+    "return_id": "RET006",
+    "vendor_id": "V002",
+    "vendor_name": "Beta Logistics",
+    "warehouse": "WH_C",
+    "product_sku": "SKU201",
+    "product_name": "Docking Station",
+    "return_date": "2026-06-17",
+    "reason": "Defective",
+    "quantity": "bad_qty",
+    "unit_cost": "89.99",
+    "status": "Received"
+  },
+  {
+    "return_id": "RET007",
+    "vendor_id": "V002",
+    "vendor_name": "Beta Logistics",
+    "warehouse": "WH_D",
+    "product_sku": "SKU202",
+    "product_name": "Webcam",
+    "return_date": "2026-06-17",
+    "reason": "Customer Return",
+    "quantity": "8",
+    "unit_cost": "",
+    "status": "Pending"
+  },
+  {
+    "return_id": "RET008",
+    "vendor_id": "V002",
+    "vendor_name": "Beta Logistics",
+    "warehouse": "WH_D",
+    "product_sku": "SKU203",
+    "product_name": "Headset",
+    "return_date": "2026-06-17",
+    "reason": "Damaged",
+    "quantity": "6",
+    "unit_cost": "32.75",
+    "status": "Closed"
+  }
+]

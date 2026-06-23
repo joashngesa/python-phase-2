@@ -1,0 +1,8 @@
+return_id|vendor_id|vendor_name|warehouse|product_sku|product_name|return_date|reason|quantity|unit_cost|status|error_reasons
+RET003|V001|Alpha Supplies||SKU102|Keyboard|2026-06-18|Damaged|3|45.0|Received|warehouse is blank
+RET004|V001|Alpha Supplies|WH_B|SKU103|Monitor||Defective|2|180.0|Received|return_date is missing
+RET006|V002|Beta Logistics|WH_C|SKU201|Docking Station|2026-06-17|Defective||89.99|Received|quantity is missing
+RET007|V002|Beta Logistics|WH_D|SKU202|Webcam|2026-06-17|Customer Return|8||Pending|unit_cost is missing
+RET008|V002|Beta Logistics|WH_D|SKU203|Headset|2026-06-17|Damaged|6|32.75|Closed|status must be one of Received, Pending, Rejected
+|V003|Gamma Parts|WH_E|SKU301|Paper Tray|2026-06-16|Defective|4|42.0|Received|return_id is blank
+RET012|V003|Gamma Parts|WH_F|SKU303|Scanner|2026-06-16|Wrong Item|-2|120.0|Pending|quantity should be greater than zero

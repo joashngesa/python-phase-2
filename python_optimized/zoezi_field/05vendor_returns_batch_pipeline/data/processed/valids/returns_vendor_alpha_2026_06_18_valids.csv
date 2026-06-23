@@ -1,0 +1,3 @@
+return_id|vendor_id|vendor_name|warehouse|product_sku|product_name|return_date|reason|quantity|unit_cost|status
+RET001|V001|Alpha Supplies|WH_A|SKU100|Laptop Stand|2026-06-18|Damaged|5|24.5|Received
+RET002|V001|Alpha Supplies|WH_A|SKU101|Wireless Mouse|2026-06-18|Customer Return|12|15.0|Pending

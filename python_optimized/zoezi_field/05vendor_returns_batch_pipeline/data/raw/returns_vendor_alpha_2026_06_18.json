@@ -1,0 +1,54 @@
+[
+  {
+    "return_id": "RET001",
+    "vendor_id": "V001",
+    "vendor_name": "Alpha Supplies",
+    "warehouse": "WH_A",
+    "product_sku": "SKU100",
+    "product_name": "Laptop Stand",
+    "return_date": "2026-06-18",
+    "reason": "Damaged",
+    "quantity": "5",
+    "unit_cost": "24.50",
+    "status": "Received"
+  },
+  {
+    "return_id": "RET002",
+    "vendor_id": "V001",
+    "vendor_name": "Alpha Supplies",
+    "warehouse": "WH_A",
+    "product_sku": "SKU101",
+    "product_name": "Wireless Mouse",
+    "return_date": "2026-06-18",
+    "reason": "Customer Return",
+    "quantity": "12",
+    "unit_cost": "15.00",
+    "status": "Pending"
+  },
+  {
+    "return_id": "RET003",
+    "vendor_id": "V001",
+    "vendor_name": "Alpha Supplies",
+    "warehouse": "",
+    "product_sku": "SKU102",
+    "product_name": "Keyboard",
+    "return_date": "2026-06-18",
+    "reason": "Damaged",
+    "quantity": "3",
+    "unit_cost": "45.00",
+    "status": "Received"
+  },
+  {
+    "return_id": "RET004",
+    "vendor_id": "V001",
+    "vendor_name": "Alpha Supplies",
+    "warehouse": "WH_B",
+    "product_sku": "SKU103",
+    "product_name": "Monitor",
+    "return_date": "2026-06-31",
+    "reason": "Defective",
+    "quantity": "2",
+    "unit_cost": "180.00",
+    "status": "Received"
+  }
+]
