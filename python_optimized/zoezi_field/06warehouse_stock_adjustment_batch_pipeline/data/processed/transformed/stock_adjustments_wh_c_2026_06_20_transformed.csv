@@ -1,0 +1,3 @@
+adjustment_id|warehouse_id|warehouse_name|sku|product_name|adjustment_date|adjustment_type|quantity_change|unit_cost|approved_by|status|inventory_value_impact|impact_direction|impact_band|source_file|processed_at
+ADJ009|WH_C|East Warehouse|SKU300|Printer Ink|2026-06-18|Return To Stock|15|18.2|MGR005|Approved|273.0|Increase|Medium|stock_adjustments_wh_c_2026_06_20.json|2026-06-24T20:21:55
+ADJ012|WH_C|East Warehouse|SKU303|Scanner|2026-06-18|Shrinkage|-2|120.0||Pending Review|-240.0|Deacrease|Medium|stock_adjustments_wh_c_2026_06_20.json|2026-06-24T20:21:55

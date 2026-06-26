@@ -1,0 +1,5 @@
+adjustment_id|warehouse_id|warehouse_name|sku|product_name|adjustment_date|adjustment_type|quantity_change|unit_cost|approved_by|status
+ADJ001|WH_A|North Warehouse|SKU100|Laptop Stand|2026-06-20|Damage|-5|24.50|MGR001|Approved
+ADJ002|WH_A|North Warehouse|SKU101|Wireless Mouse|2026-06-20|Cycle Count|12|15.00|MGR001|Approved
+ADJ003|WH_A|North Warehouse||Keyboard|2026-06-20|Damage|-3|45.00|MGR002|Approved
+ADJ004|WH_A|North Warehouse|SKU103|Monitor|2026-06-31|Shrinkage|-2|180.00|MGR002|Approved

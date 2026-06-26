@@ -1,0 +1,2 @@
+warehouse_id|warehouse_name|record_count|total_positive_impact|total_negative_impact|net_inventory_value_impact|increase_count|decrease_count|high_impact_count|medium_impact_count|low_impact_count|source_file|processed_at
+WH_C|East Warehouse|2|15|-2|33.0|1|1|0|2|0|stock_adjustments_wh_c_2026_06_20.json|2026-06-24T20:21:55

@@ -1,0 +1,3 @@
+adjustment_id|warehouse_id|warehouse_name|sku|product_name|adjustment_date|adjustment_type|quantity_change|unit_cost|approved_by|status|source_file|processed_at|error_reasons
+ADJ003|WH_A|North Warehouse||Keyboard|2026-06-20|Damage|-3|45.0|MGR002|Approved|stock_adjustments_wh_a_2026_06_20.json|2026-06-24T20:21:55|sku is blank
+ADJ004|WH_A|North Warehouse|SKU103|Monitor||Shrinkage|-2|180.0|MGR002|Approved|stock_adjustments_wh_a_2026_06_20.json|2026-06-24T20:21:55|adjustment_date is missing

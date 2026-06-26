@@ -1,0 +1,54 @@
+[
+  {
+    "adjustment_id": "ADJ005",
+    "warehouse_id": "WH_B",
+    "warehouse_name": "South Warehouse",
+    "sku": "SKU200",
+    "product_name": "USB Cable",
+    "adjustment_date": "2026-06-19",
+    "adjustment_type": "Found Inventory",
+    "quantity_change": "20",
+    "unit_cost": "4.25",
+    "approved_by": "MGR003",
+    "status": "Approved"
+  },
+  {
+    "adjustment_id": "ADJ006",
+    "warehouse_id": "WH_B",
+    "warehouse_name": "South Warehouse",
+    "sku": "SKU201",
+    "product_name": "Docking Station",
+    "adjustment_date": "2026-06-19",
+    "adjustment_type": "Cycle Count",
+    "quantity_change": "bad_qty",
+    "unit_cost": "89.99",
+    "approved_by": "MGR003",
+    "status": "Approved"
+  },
+  {
+    "adjustment_id": "ADJ007",
+    "warehouse_id": "WH_B",
+    "warehouse_name": "South Warehouse",
+    "sku": "SKU202",
+    "product_name": "Webcam",
+    "adjustment_date": "2026-06-19",
+    "adjustment_type": "Damage",
+    "quantity_change": "-8",
+    "unit_cost": "",
+    "approved_by": "MGR004",
+    "status": "Approved"
+  },
+  {
+    "adjustment_id": "ADJ008",
+    "warehouse_id": "WH_B",
+    "warehouse_name": "South Warehouse",
+    "sku": "SKU203",
+    "product_name": "Headset",
+    "adjustment_date": "2026-06-19",
+    "adjustment_type": "Theft",
+    "quantity_change": "-6",
+    "unit_cost": "32.75",
+    "approved_by": "MGR004",
+    "status": "Closed"
+  }
+]

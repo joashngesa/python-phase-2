@@ -1,0 +1,5 @@
+adjustment_id|warehouse_id|warehouse_name|sku|product_name|adjustment_date|adjustment_type|quantity_change|unit_cost|approved_by|status
+ADJ009|WH_C|East Warehouse|SKU300|Printer Ink|2026-06-18|Return To Stock|15|18.20|MGR005|Approved
+|WH_C|East Warehouse|SKU301|Paper Tray|2026-06-18|Damage|-4|42.00|MGR005|Approved
+ADJ011|WH_C|East Warehouse|SKU302|Toner Cartridge|2026-06-18|Cycle Count|0|65.00|MGR006|Approved
+ADJ012|WH_C|East Warehouse|SKU303|Scanner|2026-06-18|Shrinkage|-2|120.00||Pending Review

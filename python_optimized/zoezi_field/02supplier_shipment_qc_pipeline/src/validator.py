@@ -26,7 +26,7 @@ def validate_data(vendor):
     carrier = vendor.get("carrier")
     origin_country = vendor.get("origin_country")
     destination_country = vendor.get("destination_country")
-        #in the coming lessons, we should practice on how to handle dates in python, at the moment i have no idea😄😄
+        
     shipment_date = vendor.get("shipment_date")
     delivery_status = vendor.get("delivery_status")
     units = vendor.get("units")

@@ -1,0 +1,6 @@
+adjustment_id|warehouse_id|warehouse_name|sku|product_name|adjustment_date|adjustment_type|quantity_change|unit_cost|approved_by|status|source_file|processed_at
+ADJ001|WH_A|North Warehouse|SKU100|Laptop Stand|2026-06-20|Damage|-5|24.5|MGR001|Approved|stock_adjustments_wh_a_2026_06_20.json|2026-06-24T20:21:55
+ADJ002|WH_A|North Warehouse|SKU101|Wireless Mouse|2026-06-20|Cycle Count|12|15.0|MGR001|Approved|stock_adjustments_wh_a_2026_06_20.json|2026-06-24T20:21:55
+ADJ005|WH_B|South Warehouse|SKU200|USB Cable|2026-06-19|Found Inventory|20|4.25|MGR003|Approved|stock_adjustments_wh_b_2026_06_20.json|2026-06-24T20:21:55
+ADJ009|WH_C|East Warehouse|SKU300|Printer Ink|2026-06-18|Return To Stock|15|18.2|MGR005|Approved|stock_adjustments_wh_c_2026_06_20.json|2026-06-24T20:21:55
+ADJ012|WH_C|East Warehouse|SKU303|Scanner|2026-06-18|Shrinkage|-2|120.0||Pending Review|stock_adjustments_wh_c_2026_06_20.json|2026-06-24T20:21:55

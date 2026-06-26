@@ -1,0 +1,54 @@
+[
+  {
+    "adjustment_id": "ADJ009",
+    "warehouse_id": "WH_C",
+    "warehouse_name": "East Warehouse",
+    "sku": "SKU300",
+    "product_name": "Printer Ink",
+    "adjustment_date": "2026-06-18",
+    "adjustment_type": "Return To Stock",
+    "quantity_change": "15",
+    "unit_cost": "18.20",
+    "approved_by": "MGR005",
+    "status": "Approved"
+  },
+  {
+    "adjustment_id": "",
+    "warehouse_id": "WH_C",
+    "warehouse_name": "East Warehouse",
+    "sku": "SKU301",
+    "product_name": "Paper Tray",
+    "adjustment_date": "2026-06-18",
+    "adjustment_type": "Damage",
+    "quantity_change": "-4",
+    "unit_cost": "42.00",
+    "approved_by": "MGR005",
+    "status": "Approved"
+  },
+  {
+    "adjustment_id": "ADJ011",
+    "warehouse_id": "WH_C",
+    "warehouse_name": "East Warehouse",
+    "sku": "SKU302",
+    "product_name": "Toner Cartridge",
+    "adjustment_date": "2026-06-18",
+    "adjustment_type": "Cycle Count",
+    "quantity_change": "0",
+    "unit_cost": "65.00",
+    "approved_by": "MGR006",
+    "status": "Approved"
+  },
+  {
+    "adjustment_id": "ADJ012",
+    "warehouse_id": "WH_C",
+    "warehouse_name": "East Warehouse",
+    "sku": "SKU303",
+    "product_name": "Scanner",
+    "adjustment_date": "2026-06-18",
+    "adjustment_type": "Shrinkage",
+    "quantity_change": "-2",
+    "unit_cost": "120.00",
+    "approved_by": "",
+    "status": "Pending Review"
+  }
+]

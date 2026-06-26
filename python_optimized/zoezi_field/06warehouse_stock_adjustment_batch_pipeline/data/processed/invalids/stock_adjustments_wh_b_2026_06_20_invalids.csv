@@ -1,0 +1,4 @@
+adjustment_id|warehouse_id|warehouse_name|sku|product_name|adjustment_date|adjustment_type|quantity_change|unit_cost|approved_by|status|source_file|processed_at|error_reasons
+ADJ006|WH_B|South Warehouse|SKU201|Docking Station|2026-06-19|Cycle Count||89.99|MGR003|Approved|stock_adjustments_wh_b_2026_06_20.json|2026-06-24T20:21:55|quantity_change is missing
+ADJ007|WH_B|South Warehouse|SKU202|Webcam|2026-06-19|Damage|-8||MGR004|Approved|stock_adjustments_wh_b_2026_06_20.json|2026-06-24T20:21:55|unit_cost is missing
+ADJ008|WH_B|South Warehouse|SKU203|Headset|2026-06-19|Theft|-6|32.75|MGR004|Closed|stock_adjustments_wh_b_2026_06_20.json|2026-06-24T20:21:55|Adjustment_type should be one of Damage, Cycle Count, Shrinkage, Found Inventory, Return To Stock: Status should be one of Approved, Pending Review, Rejected

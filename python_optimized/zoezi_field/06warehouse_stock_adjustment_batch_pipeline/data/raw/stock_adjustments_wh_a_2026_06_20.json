@@ -1,0 +1,54 @@
+[
+  {
+    "adjustment_id": "ADJ001",
+    "warehouse_id": "WH_A",
+    "warehouse_name": "North Warehouse",
+    "sku": "SKU100",
+    "product_name": "Laptop Stand",
+    "adjustment_date": "2026-06-20",
+    "adjustment_type": "Damage",
+    "quantity_change": "-5",
+    "unit_cost": "24.50",
+    "approved_by": "MGR001",
+    "status": "Approved"
+  },
+  {
+    "adjustment_id": "ADJ002",
+    "warehouse_id": "WH_A",
+    "warehouse_name": "North Warehouse",
+    "sku": "SKU101",
+    "product_name": "Wireless Mouse",
+    "adjustment_date": "2026-06-20",
+    "adjustment_type": "Cycle Count",
+    "quantity_change": "12",
+    "unit_cost": "15.00",
+    "approved_by": "MGR001",
+    "status": "Approved"
+  },
+  {
+    "adjustment_id": "ADJ003",
+    "warehouse_id": "WH_A",
+    "warehouse_name": "North Warehouse",
+    "sku": "",
+    "product_name": "Keyboard",
+    "adjustment_date": "2026-06-20",
+    "adjustment_type": "Damage",
+    "quantity_change": "-3",
+    "unit_cost": "45.00",
+    "approved_by": "MGR002",
+    "status": "Approved"
+  },
+  {
+    "adjustment_id": "ADJ004",
+    "warehouse_id": "WH_A",
+    "warehouse_name": "North Warehouse",
+    "sku": "SKU103",
+    "product_name": "Monitor",
+    "adjustment_date": "2026-06-31",
+    "adjustment_type": "Shrinkage",
+    "quantity_change": "-2",
+    "unit_cost": "180.00",
+    "approved_by": "MGR002",
+    "status": "Approved"
+  }
+]

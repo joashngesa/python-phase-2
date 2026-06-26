@@ -1,0 +1,2 @@
+adjustment_id|warehouse_id|warehouse_name|sku|product_name|adjustment_date|adjustment_type|quantity_change|unit_cost|approved_by|status|source_file|processed_at
+ADJ005|WH_B|South Warehouse|SKU200|USB Cable|2026-06-19|Found Inventory|20|4.25|MGR003|Approved|stock_adjustments_wh_b_2026_06_20.json|2026-06-24T20:21:55
