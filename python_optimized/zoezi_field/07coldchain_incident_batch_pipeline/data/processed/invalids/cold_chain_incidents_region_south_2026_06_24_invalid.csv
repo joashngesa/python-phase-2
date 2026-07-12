@@ -1,0 +1,1 @@
+incident_id|shipment_id|warehouse_id|product_category|product_name|required_temp_min_c|required_temp_max_c|actual_temp_c|exposure_minutes|incident_date|delivery_status|carrier|processed_at|source_file|error_reasons

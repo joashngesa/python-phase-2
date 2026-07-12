@@ -13,10 +13,8 @@ dist/
 build/
 *.egg-info/
 
-# Secret and configuration files (CRITICAL)
+# Secret (CRITICAL)
 .env
-.env.*
-!.env.example
 secrets.json
 
 # IDE and OS metadata

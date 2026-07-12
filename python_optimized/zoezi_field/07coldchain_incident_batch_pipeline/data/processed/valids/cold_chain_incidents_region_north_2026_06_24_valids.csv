@@ -1,0 +1,11 @@
+incident_id|shipment_id|warehouse_id|product_category|product_name|required_temp_min_c|required_temp_max_c|actual_temp_c|exposure_minutes|incident_date|delivery_status|carrier|processed_at|source_file
+INC-N-001|SHP-N-1001|WH_NORTH_01|Vaccines|MMR Vaccine|2.0|8.0|9.5|45|2026-06-23|Delivered|ArcticMove|2026-07-12T14:31:56|cold_chain_incidents_region_north_2026_06_24.json
+INC-N-002|SHP-N-1002|WH_NORTH_02|Fresh Produce|Strawberries|1.0|5.0|4.2|30|2026-06-23|In Transit|FrostLine|2026-07-12T14:31:56|cold_chain_incidents_region_north_2026_06_24.json
+INC-N-003|SHP-N-1003|WH_NORTH_01|Frozen Seafood|Frozen Salmon|-18.0|-12.0|-10.0|90|2026-06-22|Delayed|PolarFreight|2026-07-12T14:31:56|cold_chain_incidents_region_north_2026_06_24.json
+INC-N-004|SHP-N-1004|WH_NORTH_03|Insulin|Insulin Pens|2.0|8.0|1.5|130|2026-06-22|Returned|ColdRoute|2026-07-12T14:31:56|cold_chain_incidents_region_north_2026_06_24.json
+INC-N-005|SHP-N-1005|WH_NORTH_02|Dairy|Greek Yogurt|1.0|4.0|6.5|75|2026-06-21|Delivered|GlacierExpress|2026-07-12T14:31:56|cold_chain_incidents_region_north_2026_06_24.json
+INC-N-006|SHP-N-1006|WH_NORTH_04|Specialty Foods|Truffle Cheese|5.0|12.0|12.0|20|2026-06-21|Delivered|ArcticMove|2026-07-12T14:31:56|cold_chain_incidents_region_north_2026_06_24.json
+INC-N-007|SHP-N-1007|WH_NORTH_01|Vaccines|Flu Vaccine|2.0|8.0|11.2|150|2026-06-20|Rejected|FrostLine|2026-07-12T14:31:56|cold_chain_incidents_region_north_2026_06_24.json
+INC-N-008|SHP-N-1008|WH_NORTH_03|Fresh Produce|Lettuce|1.0|5.0|0.5|25|2026-06-20|Delivered|ColdRoute|2026-07-12T14:31:56|cold_chain_incidents_region_north_2026_06_24.json
+INC-N-009|SHP-N-1009|WH_NORTH_02|Insulin|Insulin Vials|2.0|8.0|7.8|10|2026-06-19|In Transit|PolarFreight|2026-07-12T14:31:56|cold_chain_incidents_region_north_2026_06_24.json
+INC-N-010|SHP-N-1010|WH_NORTH_04|Frozen Seafood|Frozen Shrimp|-18.0|-12.0|-21.0|60|2026-06-19|Delayed|GlacierExpress|2026-07-12T14:31:56|cold_chain_incidents_region_north_2026_06_24.json

@@ -1,0 +1,16 @@
+incident_id|shipment_id|warehouse_id|product_category|product_name|required_temp_min_c|required_temp_max_c|actual_temp_c|exposure_minutes|incident_date|delivery_status|carrier|processed_at|source_file
+INC-S-001|SHP-S-3001|WH_SOUTH_01|Vaccines|Yellow Fever Vaccine|2.0|8.0|8.2|30|2026-06-23|Delivered|ArcticMove|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-002|SHP-S-3002|WH_SOUTH_02|Fresh Produce|Mangoes|1.0|5.0|7.0|80|2026-06-23|Delayed|FrostLine|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-003|SHP-S-3003|WH_SOUTH_03|Frozen Seafood|Frozen Prawns|-18.0|-12.0|-14.0|25|2026-06-22|In Transit|PolarFreight|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-004|SHP-S-3004|WH_SOUTH_01|Insulin|Insulin Emergency Pack|2.0|8.0|0.0|125|2026-06-22|Returned|ColdRoute|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-005|SHP-S-3005|WH_SOUTH_02|Dairy|Cheddar Cheese|1.0|4.0|4.5|45|2026-06-21|Delivered|GlacierExpress|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-006|SHP-S-3006|WH_SOUTH_03|Specialty Foods|Premium Sauces|5.0|12.0|9.0|15|2026-06-21|Delivered|ArcticMove|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-007|SHP-S-3007|WH_SOUTH_01|Vaccines|Tetanus Vaccine|2.0|8.0|13.0|100|2026-06-20|Rejected|FrostLine|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-008|SHP-S-3008|WH_SOUTH_02|Fresh Produce|Pineapples|1.0|5.0|2.5|20|2026-06-20|In Transit|ColdRoute|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-009|SHP-S-3009|WH_SOUTH_03|Frozen Seafood|Frozen Lobster|-18.0|-12.0|-8.0|160|2026-06-19|Rejected|PolarFreight|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-010|SHP-S-3010|WH_SOUTH_01|Insulin|Insulin Travel Kit|2.0|8.0|5.0|30|2026-06-19|Delivered|GlacierExpress|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-011|SHP-S-3011|WH_SOUTH_02|Dairy|Mozzarella|1.0|4.0|6.2|70|2026-06-18|Delayed|ArcticMove|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-012|SHP-S-3012|WH_SOUTH_03|Specialty Foods|Gourmet Salsa|5.0|12.0|4.0|55|2026-06-18|Returned|FrostLine|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-013|SHP-S-3013|WH_SOUTH_01|Vaccines|HPV Vaccine|2.0|8.0|6.0|10|2026-06-17|Delivered|ColdRoute|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-014|SHP-S-3014|WH_SOUTH_02|Fresh Produce|Green Beans|1.0|5.0|0.0|65|2026-06-17|Delayed|PolarFreight|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json
+INC-S-015|SHP-S-3015|WH_SOUTH_03|Frozen Seafood|Frozen Tilapia|-18.0|-12.0|-12.0|20|2026-06-17|Delivered|GlacierExpress|2026-07-12T14:31:56|cold_chain_incidents_region_south_2026_06_24.json

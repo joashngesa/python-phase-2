@@ -1,9 +1,9 @@
-
 from src.validate import validate_data
 
-def get_valids_invalids (converted):
 
-    valids = []
+def get_valid_invalids(converted):
+
+    valid = []
     invalids = []
 
     for event in converted:
@@ -13,8 +13,8 @@ def get_valids_invalids (converted):
             invalid_data = event.copy()
             invalid_data["error_reasons"] = ": ".join(reasons)
             invalids.append(invalid_data)
-        
-        else:
-            valids.append(event.copy())
 
-    return invalids, valids
+        else:
+            valid.append(event.copy())
+
+    return invalids, valid

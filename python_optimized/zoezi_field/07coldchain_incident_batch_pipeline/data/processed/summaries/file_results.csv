@@ -1,0 +1,3 @@
+file_name|status|raw_count|valid_count|invalid_count|transformed_count|error_type|error_message
+cold_chain_incidents_region_north_2026_06_24.json|completed with invalid records|5|10|5|10||
+cold_chain_incidents_region_south_2026_06_24.json|success|5|15|0|15||
