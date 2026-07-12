@@ -1,2 +1,2 @@
 batch_status|files_discovered|files_succeeded|files_failed|total_raw_count|total_valid_count|total_invalid_count|total_transformed_count
-failed|2|2|0|10|25|5|25
+completed with errors|3|2|1|10|25|5|25
