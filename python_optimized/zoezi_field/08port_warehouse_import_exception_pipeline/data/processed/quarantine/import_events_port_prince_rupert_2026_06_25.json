@@ -1,0 +1,23 @@
+{
+  "source": "port_import_api",
+  "port": "Prince Rupert",
+  "batch_id": "IMP-PRR-20260625-001",
+  "generated_at": "2026-06-25T06:00:00",
+  "records": {
+    "event_id": "IMP-PRR-001",
+    "container_id": "CONT-PRR-9001",
+    "port": "Prince Rupert",
+    "warehouse_id": "WH_BC_NORTH_01",
+    "supplier_name": "Northern Pacific Imports",
+    "product_category": "Industrial Equipment",
+    "container_type": "Flat Rack",
+    "arrival_date": "2026-06-24",
+    "customs_release_date": "2026-06-25",
+    "warehouse_eta": "2026-06-27",
+    "actual_warehouse_arrival": "2026-06-28",
+    "declared_value_usd": "88000",
+    "container_weight_kg": "24500",
+    "inspection_status": "Held",
+    "transport_mode": "Rail"
+  }
+}

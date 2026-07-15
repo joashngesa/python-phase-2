@@ -14,7 +14,7 @@ def scan_input_folder(directory_path, pattern):
     files = sorted(record for record in folder_path.glob(pattern) if record.is_file())
 
     if not files:
-        raise (
+        raise ValueError(
             f"⚠️ Files with the pattern {pattern} was not found in input folder_path ❌"
         )
 

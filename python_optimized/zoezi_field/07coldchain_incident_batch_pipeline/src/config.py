@@ -13,7 +13,7 @@ def get_env_variable(VARIABLE_NAME):
     env_variable = os.getenv(VARIABLE_NAME)
 
     if env_variable is None or env_variable.strip() == "":
-        raise (f"⚠️ The variable {VARIABLE_NAME} is not found in .env 🚨")
+        raise ValueError(f"⚠️ The variable {VARIABLE_NAME} is not found in .env 🚨")
 
     return env_variable
 

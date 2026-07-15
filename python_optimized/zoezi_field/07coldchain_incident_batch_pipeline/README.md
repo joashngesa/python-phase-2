@@ -25,7 +25,9 @@ The pipeline receivfes json files in the folder. Each file contains shipment tem
 
 ## Validation rules
 
-A record is invalid if:
+A record is incd ..
+
+valid if:
 
 * Any required field is missing.
 * Any required field is blank
