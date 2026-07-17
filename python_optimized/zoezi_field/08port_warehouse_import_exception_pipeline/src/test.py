@@ -4,6 +4,7 @@ import json
 import os
 import shutil
 from tabulate import tabulate
+from datetime import datetime, date
 
 from src.config import INPUT_DIR
 from src.config import FILE_PATTERN
@@ -13,6 +14,9 @@ from src.scan import scan_folder
 from src.read import read_file
 from src.extract import extract_tables
 from src.convert import convert_data
+from src.invalid import get_invalid_tbl
+from src.valid import get_duplicates_valid
+from src.transform import transform_data
 
 files = scan_folder(INPUT_DIR, FILE_PATTERN)
 print("\nfiles discovered: ", len(files))
@@ -48,6 +52,11 @@ for record in files:
         print(tabulate(extracted, headers="keys", tablefmt="grid"))
         extracted_files_count += 1
 
+        processed_at = datetime.now()
+        for row in extracted:
+            row["processed_at"] = processed_at
+            row["source_file"] = record.name
+
     except ValueError as error:
         print(
             f"\n📕 the file {record.stem} has failed extraction due to structure failure"
@@ -61,6 +70,20 @@ for record in files:
     converted = convert_data(extracted)
     print(f"\n📜 converted file: {record.name}")
     print(tabulate(converted, headers="keys", tablefmt="grid"))
+
+    invalid, valid_raw = get_invalid_tbl(converted)
+    print(f"\n📕 invalid table: {record.name}")
+    print(tabulate(invalid, headers="keys", tablefmt="grid"))
+
+    duplicates, valid = get_duplicates_valid(valid_raw)
+    print(f"\n📕 duplicates table: {record.name}")
+    print(tabulate(duplicates, headers="keys", tablefmt="grid"))
+    print(f"\n📄 valid table: {record.name}")
+    print(tabulate(valid, headers="keys", tablefmt="grid"))
+
+    transformed = transform_data(valid)
+    print(f"\n📑 transformed table: {record.name}")
+    print(tabulate(transformed, headers="keys", tablefmt="grid"))
 
 print(f"\nprocessed file count: {read_files_count}")
 print(f"quarantined files after reading: {quarantined_files_count_from_reading}")

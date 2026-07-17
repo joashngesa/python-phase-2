@@ -32,3 +32,38 @@ RUN_SUMMARY_DIR = BASE_DIR / get_env_variable("RUN_SUMMARY_DIR")
 TRANSFORMED_DIR = BASE_DIR / get_env_variable("TRANSFORMED_DIR")
 
 FILE_PATTERN = get_env_variable("FILE_PATTERN")
+
+REQUIRED_FIELDS = [
+    "event_id",
+    "container_id",
+    "port",
+    "warehouse_id",
+    "supplier_name",
+    "product_category",
+    "container_type",
+    "arrival_date",
+    "customs_release_date",
+    "warehouse_eta",
+    "actual_warehouse_arrival",
+    "declared_value_usd",
+    "container_weight_kg",
+    "inspection_status",
+    "transport_mode",
+]
+
+ALLOWED_PORTS = ["Vancouver", "Halifax", "Montreal", "Prince Rupert"]
+
+ALLOWED_PRODUCT_CATEGORIES = [
+    "Electronics",
+    "Auto Parts",
+    "Apparel",
+    "Food Ingredients",
+    "Medical Supplies",
+    "Industrial Equipment",
+]
+
+ALLOWED_CONTAINER_TYPES = ["Dry", "Reefer", "Open Top", "Flat Rack"]
+
+ALLOWED_INSPECTION_STATUSES = ["Released", "Held", "Inspection Required", "Rejected"]
+
+ALLOWED_TRANSPORT_MODES = ["Rail", "Truck", "Intermodal"]
