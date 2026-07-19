@@ -23,3 +23,15 @@ def extract_tables(raw):
                     continue
 
     raise ValueError(f"🚩 could not find valid list of dictionary 🏮")
+
+
+def extract_port(raw):
+
+    port = raw.get("port")
+    return port
+
+
+def extract_batch_id(raw):
+
+    batch_id = raw.get("batch_id")
+    return batch_id

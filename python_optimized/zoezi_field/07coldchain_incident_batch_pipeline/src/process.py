@@ -1,9 +1,6 @@
 from datetime import datetime, date
-from tabulate import tabulate
 import json
 
-from src.config import RAW_DIR
-from src.config import FILE_PATTERN
 from src.config import VALIDS_DIR
 from src.config import INVALIDS_DIR
 from src.config import TRANSFORMED_DIR

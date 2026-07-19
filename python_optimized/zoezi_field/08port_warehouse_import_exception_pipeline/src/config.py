@@ -32,6 +32,7 @@ RUN_SUMMARY_DIR = BASE_DIR / get_env_variable("RUN_SUMMARY_DIR")
 TRANSFORMED_DIR = BASE_DIR / get_env_variable("TRANSFORMED_DIR")
 
 FILE_PATTERN = get_env_variable("FILE_PATTERN")
+OUTPUT_DELIMITER = "|"
 
 REQUIRED_FIELDS = [
     "event_id",
@@ -67,3 +68,130 @@ ALLOWED_CONTAINER_TYPES = ["Dry", "Reefer", "Open Top", "Flat Rack"]
 ALLOWED_INSPECTION_STATUSES = ["Released", "Held", "Inspection Required", "Rejected"]
 
 ALLOWED_TRANSPORT_MODES = ["Rail", "Truck", "Intermodal"]
+
+VALID_COLUMNS = [
+    "event_id",
+    "container_id",
+    "port",
+    "warehouse_id",
+    "supplier_name",
+    "product_category",
+    "container_type",
+    "arrival_date",
+    "customs_release_date",
+    "warehouse_eta",
+    "actual_warehouse_arrival",
+    "declared_value_usd",
+    "container_weight_kg",
+    "inspection_status",
+    "transport_mode",
+    "processed_at",
+    "source_file",
+]
+
+INVALID_COLUMNS = [
+    "event_id",
+    "container_id",
+    "port",
+    "warehouse_id",
+    "supplier_name",
+    "product_category",
+    "container_type",
+    "arrival_date",
+    "customs_release_date",
+    "warehouse_eta",
+    "actual_warehouse_arrival",
+    "declared_value_usd",
+    "container_weight_kg",
+    "inspection_status",
+    "transport_mode",
+    "processed_at",
+    "source_file",
+    "error_reasons",
+]
+
+DUPLICATES_COLUMNS = [
+    "event_id",
+    "container_id",
+    "port",
+    "warehouse_id",
+    "supplier_name",
+    "product_category",
+    "container_type",
+    "arrival_date",
+    "customs_release_date",
+    "warehouse_eta",
+    "actual_warehouse_arrival",
+    "declared_value_usd",
+    "container_weight_kg",
+    "inspection_status",
+    "transport_mode",
+    "processed_at",
+    "source_file",
+    "error_reasons",
+]
+
+TRANSFORMED_COLUMNS = [
+    "event_id",
+    "container_id",
+    "port",
+    "warehouse_id",
+    "supplier_name",
+    "product_category",
+    "container_type",
+    "arrival_date",
+    "customs_release_date",
+    "warehouse_eta",
+    "actual_warehouse_arrival",
+    "declared_value_usd",
+    "container_weight_kg",
+    "inspection_status",
+    "transport_mode",
+    "processed_at",
+    "source_file",
+    "customs_clearance_days",
+    "warehouse_delays_days",
+    "value_band",
+    "weight_band",
+    "exception_types",
+    "risk_score",
+    "risk_level",
+]
+
+FILE_METRICS_COLUMNS = [
+    "file_name",
+    "port",
+    "batch_id",
+    "raw_count",
+    "valid_count",
+    "invalid_count",
+    "duplicate_count",
+    "transformed_count",
+    "error_type",
+    "error_message",
+]
+
+TBL_SUMMARY_COLUMNS = [
+    "port",
+    "product_category",
+    "exception_type",
+    "risk_level",
+    "container_count",
+    "total_declared_value_usd",
+    "total_container_weight_kg",
+    "avg_customs_clearance_days",
+    "avg_warehouse_delay_days",
+]
+
+PIPELINE_METRICS_COLUMNS = [
+    "batch_status",
+    "files_discovered",
+    "files_succeeded",
+    "files_with_duplicates",
+    "files_failed",
+    "total_raw_count",
+    "total_valid_count",
+    "total_invalid_count",
+    "total_duplicate_count",
+    "total_transformed_count",
+]

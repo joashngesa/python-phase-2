@@ -13,10 +13,13 @@ from src.config import QUARANTINE_DIR
 from src.scan import scan_folder
 from src.read import read_file
 from src.extract import extract_tables
+from src.extract import extract_batch_id
+from src.extract import extract_port
 from src.convert import convert_data
 from src.invalid import get_invalid_tbl
 from src.valid import get_duplicates_valid
 from src.transform import transform_data
+from src.summary import summarize_table
 
 files = scan_folder(INPUT_DIR, FILE_PATTERN)
 print("\nfiles discovered: ", len(files))
@@ -50,6 +53,11 @@ for record in files:
         extracted = extract_tables(raw)
         print(f"\n📖 extracted file_name: {record.name}")
         print(tabulate(extracted, headers="keys", tablefmt="grid"))
+        batch_id = extract_batch_id(raw)
+        port = extract_port(raw)
+
+        print(f"🏗️ Port: {port}")
+        print(f"🪪 Batch_id: {batch_id}")
         extracted_files_count += 1
 
         processed_at = datetime.now()
@@ -84,6 +92,10 @@ for record in files:
     transformed = transform_data(valid)
     print(f"\n📑 transformed table: {record.name}")
     print(tabulate(transformed, headers="keys", tablefmt="grid"))
+
+    table_summary = summarize_table(transformed)
+    print(f"\n💹 table summary: {record.name}")
+    print(tabulate(table_summary, headers="keys", tablefmt="grid"))
 
 print(f"\nprocessed file count: {read_files_count}")
 print(f"quarantined files after reading: {quarantined_files_count_from_reading}")
