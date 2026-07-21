@@ -1,0 +1,2 @@
+file_name|port|batch_id|processing_status|raw_count|valid_count|invalid_count|duplicate_count|transformed_count|error_type|error_message
+import_events_port_montreal_2026_06_25.json|Montreal|IMP-MTL-20260625-001|completed with invalid records|18|15|3|0|15||

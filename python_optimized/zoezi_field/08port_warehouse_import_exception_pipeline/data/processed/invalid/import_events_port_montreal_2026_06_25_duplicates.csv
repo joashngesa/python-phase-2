@@ -1,0 +1,1 @@
+event_id|container_id|port|warehouse_id|supplier_name|product_category|container_type|arrival_date|customs_release_date|warehouse_eta|actual_warehouse_arrival|declared_value_usd|container_weight_kg|inspection_status|transport_mode|processed_at|source_file|error_reasons

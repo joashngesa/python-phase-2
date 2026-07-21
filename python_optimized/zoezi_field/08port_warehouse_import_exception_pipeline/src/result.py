@@ -33,22 +33,22 @@ def build_success_score(
     """
 
     if invalid_count > 0:
-        status = "completed with invalid records"
+        processing_status = "completed with invalid records"
 
     elif duplicate_count > 0:
-        status = "completed with duplicates"
+        processing_status = "completed with duplicates"
 
     elif invalid_count > 0 and duplicate_count > 0:
-        status = "completed with invalids & duplicates"
+        processing_status = "completed with invalid & duplicates"
 
-    else:
-        status = "sucess"
+    elif invalid_count == 0:
+        processing_status = "sucess"
 
     return {
         "file_name": file_name,
         "port": port,
         "batch_id": batch_id,
-        "status": status,
+        "processing_status": processing_status,
         "raw_count": raw_count,
         "valid_count": valid_count,
         "invalid_count": invalid_count,
@@ -63,7 +63,7 @@ def build_failure_score(
     file_name,
     port,
     batch_id,
-    status,
+    processing_status,
     error,
 ):
     """
@@ -74,7 +74,7 @@ def build_failure_score(
         "file_name": file_name,
         "port": port,
         "batch_id": batch_id,
-        "status": status,
+        "processing_status": processing_status,
         "raw_count": 0,
         "valid_count": 0,
         "invalid_count": 0,

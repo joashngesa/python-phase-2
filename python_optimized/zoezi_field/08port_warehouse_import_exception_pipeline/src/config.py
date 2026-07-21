@@ -162,6 +162,7 @@ FILE_METRICS_COLUMNS = [
     "file_name",
     "port",
     "batch_id",
+    "processing_status",
     "raw_count",
     "valid_count",
     "invalid_count",
@@ -184,14 +185,12 @@ TBL_SUMMARY_COLUMNS = [
 ]
 
 PIPELINE_METRICS_COLUMNS = [
-    "batch_status",
-    "files_discovered",
-    "files_succeeded",
-    "files_with_duplicates",
-    "files_failed",
-    "total_raw_count",
-    "total_valid_count",
-    "total_invalid_count",
-    "total_duplicate_count",
-    "total_transformed_count",
+    "total_files",
+    "successful_files",
+    "failed_files",
+    "total_raw_records",
+    "total_valid_records",
+    "total_invalid_records",
+    "total_duplicate_records",
+    "total_transformed_records",
 ]

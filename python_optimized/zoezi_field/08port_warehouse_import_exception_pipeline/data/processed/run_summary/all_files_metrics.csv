@@ -1,0 +1,5 @@
+file_name|port|batch_id|processing_status|raw_count|valid_count|invalid_count|duplicate_count|transformed_count|error_type|error_message
+import_events_port_halifax_2026_06_25.json|unknown|unknown|JSON parsing failed|0|0|0|0|0|JSONDecodeError|Expecting ',' delimiter: line 312 column 3 (char 10539)
+import_events_port_montreal_2026_06_25.json|Montreal|IMP-MTL-20260625-001|completed with invalid records|18|15|3|0|15||
+import_events_port_prince_rupert_2026_06_25.json|unknown|unknown|invalid value during extacting|0|0|0|0|0|ValueError|🚩 could not find valid list of dictionary 🏮
+import_events_port_vancouver_2026_06_25.json|Vancouver|IMP-VAN-20260625-001|completed with invalid records|18|10|6|2|10||

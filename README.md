@@ -10,7 +10,7 @@ However, each project or pipeline has its own project pipeline set up.
 * [X] working with json files
 * [X] intro to good pipeline orchestration  practices
 * [X] intro to error handling & metadata extraction
-* [ ] directory scanning
+* [X] directory scanning
 * [ ] batch file processing
 * [ ] logging & observability basics
 * [ ] error resilient scripts
@@ -18,7 +18,6 @@ However, each project or pipeline has its own project pipeline set up.
 * [ ] intro to pandas
 * [ ] building mini ETL scripts
 * [ ] explore different ranges of datasets
-
 
 ## Expected outcome
 

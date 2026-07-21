@@ -27,4 +27,53 @@ K --> L[transformed]
 L --> M[process]
 M --> N[execute]
 ```
+
 ```
+```
+
+
+## Orchestration Levels
+
+The pipeline has three levels of control:
+
+### Level one: `execute.py`
+
+This is the pipleine entry point. It's responsibility is to:
+
+* start the pipeline
+* call `process_all_files()`
+* receive the final run results
+* print the overall execution report
+
+### Level 2:  `process_all_files()`
+
+This controls the entire batch. Its's responsibility is to:
+
+* scan the input folder
+* receive the discovered file_paths
+* process each file
+* collect each file result
+* create run levels totals
+* handle folder level failures
+
+This function orchestrates the batch
+
+the expectes output of `process_all_files` is **file_results**
+
+### Level 3:  `process_one_file()`
+
+This controls one file. Its's responsibility is to:
+
+* read one file
+* extract records and metadata
+* convert values
+* validate rows
+* create function that is used to get invalid & valid rows
+* separate duplicates & valid rows
+* transform valid rows
+* summarize transformed rows
+* write file level outputs
+
+This function orchestrates file level work flow
+
+The expected output from `process_one_file` is **file_result**
