@@ -1,0 +1,8 @@
+depot|vehicle_type|maintenance_risk_level|vehicle_count|total_fuel_litres|total_fuel_cost_cad|average_fuel_price_per_litre|average_engine_temperature_c|defect_count|unavailable_vehicle_count
+Calgary South|Delivery Van|Low|1|58.5|90.68|1.55|88.4|0|0
+Calgary South|Box Truck|Medium|1|95.0|147.25|1.55|101.2|0|1
+Calgary South|Refrigerated Truck|High|1|118.0|183.9|1.56|97.8|1|0
+Calgary South|Tractor Trailer|Medium|2|470.0|732.95|1.56|107.4|0|2
+Calgary South|Service Vehicle|Low|2|44.5|69.19|1.55|84.2|0|0
+Calgary South|Box Truck|Critical|1|102.0|158.1|1.55|100.0|1|1
+Calgary South|Refrigerated Truck|Critical|1|132.0|204.6|1.55|111.8|1|1

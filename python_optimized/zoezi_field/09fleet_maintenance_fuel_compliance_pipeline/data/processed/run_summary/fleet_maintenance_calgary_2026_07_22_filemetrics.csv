@@ -1,0 +1,2 @@
+file_name|depot|batch_id|processing_status|raw_count|valid_count|invalid_count|duplicate_count|transformed_count|depot_summary_count|error_type|error_message
+fleet_maintenance_calgary_2026_07_22.json|Calgary South|FLT-YYC-20260722-002|completed with invalid records|18|9|7|2|9|7||

@@ -1,0 +1,10 @@
+depot|vehicle_type|maintenance_risk_level|vehicle_count|total_fuel_litres|total_fuel_cost_cad|average_fuel_price_per_litre|average_engine_temperature_c|defect_count|unavailable_vehicle_count
+Edmonton North|Refrigerated Truck|Low|1|92.5|142.8|1.54|89.5|0|0
+Edmonton North|Delivery Van|Medium|1|54.0|82.35|1.52|91.2|0|1
+Edmonton North|Box Truck|Medium|3|282.0|435.4|1.54|101.3|0|3
+Edmonton North|Tractor Trailer|Low|1|0.0|0.0|0.0|87.0|0|0
+Edmonton North|Service Vehicle|High|1|48.0|75.6|1.57|98.2|1|0
+Edmonton North|Refrigerated Truck|Critical|1|125.0|193.75|1.55|112.3|1|1
+Edmonton North|Delivery Van|Low|1|61.5|94.1|1.53|88.8|0|0
+Edmonton North|Tractor Trailer|Medium|1|210.0|325.5|1.55|108.0|0|1
+Edmonton North|Service Vehicle|Low|1|42.0|64.7|1.54|85.4|0|0

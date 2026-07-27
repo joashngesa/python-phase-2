@@ -36,7 +36,7 @@ def parse_dates(column, field_name):
     try:
         return datetime.strptime(column, "%Y-%m-%d").date(), None
     except:
-        return None, f"the {field_name} should be in YYYY-MM--DD format"
+        return None, f"the {field_name} should be in YYYY-MM-DD format"
 
 
 def convert_data(data):
@@ -69,8 +69,8 @@ def convert_data(data):
         else:
             try:
                 modified["unit_cost"] = float(modified["unit_cost"])
-            except:
-                modified["unit_cost"]
+            except (ValueError, TypeError):
+                modified["unit_cost"] = None
                 add_error(modified, "unit_cost should be in float format")
 
         # adjustment_date conversion
@@ -82,7 +82,7 @@ def convert_data(data):
         modified["adjustment_date"] = parsed_adj_date
 
         if adj_date_error:
-            add_error(modified, "adjustment_date_error")
+            add_error(modified, adj_date_error)
 
         converted.append(modified)
 

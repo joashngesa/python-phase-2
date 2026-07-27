@@ -8,28 +8,68 @@ Each port sends JSON files with import container events. Some files are clean, s
 
 Your pipeline must scan a folder, extract records from multiple JSON structures, validate and convert fields, handle controlled file failure, separate valid/invalid/duplicate records, transform valid records, summarize business results, and produce a final run summary.
 
-## Process workflow
+## Pipeline Visual Data Flow
 
-```Markdown
-```mermaid
-flowchart LR
-A[raw_files] --> B[scanner]
-B --> C[reader]
-C --> D[extract]
-D --> E[structure_checker]
-E --> F[convert]
-F --> G[validator]
-G --> H[valid_raw_record]
-G --> I[invalid_record]
-H --> J[duplicates]
-H --> K[valid_record]
-K --> L[transformed]
-L --> M[process]
-M --> N[execute]
-```
+INPUT_DIR + FILE_PATTERN
+          │
+          ▼
+    scan_folder()
+          │
+          │ returns list[Path]
+          ▼
+   process_all_files()
+          │
+          ├──────── file_path 1 ────────┐
+          │                             ▼
+          │                    process_one_file()
+          │                             │
+          │                             ▼
+          │                        read_file()
+          │                             │ raw
+          │                             ▼
+          │                     extraction modules
+          │                             │ extracted rows
+          │                             ▼
+          │                       convert_data()
+          │                             │ converted rows
+          │                             ▼
+          │                    get_invalid_tbl()
+          │                       │          │
+          │                    invalid    valid_raw
+          │                                  │
+          │                                  ▼
+          │                       get_duplicates_valid()
+          │                          │             │
+          │                     duplicates       valid
+          │                                        │
+          │                                        ▼
+          │                                transform_data()
+          │                                        │
+          │                                        ▼
+          │                               summarize_table()
+          │                                        │
+          │                                        ▼
+          │                                  write outputs
+          │                                        │
+          │                                        ▼
+          │                              build_success_score()
+          │                                        │
+          │                              returns one file result
+          │                                        │
+          ├──────── file_path 2 ────────────────────┤
+          ├──────── file_path 3 ────────────────────┤
+          │                                        │
+          ▼                                        ▼
+            collect all file-result dictionaries
+                              │
+                              ▼
+                     build_run_summary()
+                              │
+                              ▼
+                         execute.py
+                              │
+                 print and write final report
 
-```
-```
 
 
 ## Orchestration Levels

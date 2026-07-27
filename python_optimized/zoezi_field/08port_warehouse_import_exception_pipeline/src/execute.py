@@ -21,10 +21,10 @@ def execute_warehouse_import_pipeline():
         OUTPUT_DELIMITER,
     )
 
-    print("📊 Pipleine run summary")
+    print("📊 Pipeline run summary")
     print(f"📥 Processed_files: {pipeline_summary["total_files"]}")
     print(f"✔️ Successful_files: {pipeline_summary["successful_files"]}")
-    print(f"❌ Filed_files: {pipeline_summary["failed_files"]}")
+    print(f"❌ Failed_files: {pipeline_summary["failed_files"]}")
     print(f"📜 Total_raw_records: {pipeline_summary["total_raw_records"]}")
     print(f"📑 Total_valid_records: {pipeline_summary["total_valid_records"]}")
     print(f"🚫 Total_invalid_records: {pipeline_summary["total_invalid_records"]}")

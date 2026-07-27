@@ -1,0 +1,26 @@
+{
+    "metadata": {
+        "source": "fleet_management_system",
+        "depot": "Lethbridge Central",
+        "batch_id": "FLT-LETH-20260722-004",
+        "generated_at": "2026-07-22T18:45:00"
+    },
+    "fleet_records": [
+        "INS-LETH-4001",
+        "INS-LETH-4002",
+        "INS-LETH-4003",
+        "INS-LETH-4004",
+        "INS-LETH-4005",
+        "INS-LETH-4006",
+        "INS-LETH-4007",
+        "INS-LETH-4008",
+        "INS-LETH-4009",
+        "INS-LETH-4010",
+        "INS-LETH-4011",
+        "INS-LETH-4012",
+        "INS-LETH-4013",
+        "INS-LETH-4014",
+        "INS-LETH-4015",
+        "INS-LETH-4016"
+    ]
+}

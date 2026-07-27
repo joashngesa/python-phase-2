@@ -1,0 +1,10 @@
+inspection_id|vehicle_id|inspection_date|vehicle_type|odometer_km|fuel_litres|fuel_cost_cad|engine_temperature_c|brake_condition|tire_condition|defect_reported|vehicle_status|generated_at|source_file
+INS-YYC-2001|VAN-201|2026-07-22|Delivery Van|105400|58.5|90.68|88.4|Good|Good|False|Available|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json
+INS-YYC-2002|BOX-401|2026-07-22|Box Truck|198300|95.0|147.25|101.2|Monitor|Good|False|In Service|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json
+INS-YYC-2003|TRK-501|2026-07-22|Refrigerated Truck|240800|118.0|183.9|97.8|Good|Monitor|True|Maintenance Required|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json
+INS-YYC-2004|TRL-601|2026-07-22|Tractor Trailer|680100|225.0|350.75|109.5|Monitor|Good|False|In Service|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json
+INS-YYC-2010|SRV-099|2026-07-22|Service Vehicle|82300|0.0|0.0|84.5|Good|Good|False|Available|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json
+INS-YYC-2012|BOX-416|2026-07-22|Box Truck|208900|102.0|158.1|100.0|Critical|Good|True|Out of Service|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json
+INS-YYC-2013|TRK-518|2026-07-22|Refrigerated Truck|287100|132.0|204.6|111.8|Good|Monitor|True|Maintenance Required|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json
+INS-YYC-2014|TRL-620|2026-07-22|Tractor Trailer|744200|245.0|382.2|105.3|Good|Good|False|In Service|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json
+INS-YYC-2018|SRV-107|2026-07-22|Service Vehicle|77600|44.5|69.19|83.9|Good|Good|False|Available|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json
