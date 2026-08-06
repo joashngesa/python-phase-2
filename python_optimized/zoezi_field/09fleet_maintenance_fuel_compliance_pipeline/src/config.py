@@ -13,7 +13,7 @@ def get_env_variable(VARIABLE_NAME):
     env_variable = os.getenv(VARIABLE_NAME)
 
     if env_variable is None or env_variable.strip() == "":
-        raise ValueError(f"⛔ The variable {VARIABLE_NAME} is not found in .env.config")
+        raise ValueError(f"The variable {VARIABLE_NAME} is not found in .env.config")
 
     return env_variable
 
@@ -26,7 +26,10 @@ QUARANTINE_DIR = BASE_DIR / get_env_variable("QUARANTINE_DIR")
 TRANSFORMED_DIR = BASE_DIR / get_env_variable("TRANSFORMED_DIR")
 RUN_SUMMARY_DIR = BASE_DIR / get_env_variable("RUN_SUMMARY_DIR")
 DEPOT_SUMMARY_DIR = BASE_DIR / get_env_variable("DEPOT_SUMMARY_DIR")
+LOG_DIR = BASE_DIR / "logs"
+LOG_FILE = LOG_DIR / "fleet_pipeline.log"
 
+PIPELINE_NAME = "Fleet maintenance fuel compliance"
 FILE_PATTERN = get_env_variable("FILE_PATTERN")
 OUTPUT_DELIMITER = "|"
 

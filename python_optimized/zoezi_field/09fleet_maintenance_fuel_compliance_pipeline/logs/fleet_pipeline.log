@@ -1,0 +1,137 @@
+2026-08-05 19:36:25 | INFO     | root | Pipeline processing started | pipeline_name=Fleet maintenance fuel compliance | run_id=fleet_20260806T013625Z
+2026-08-05 19:36:25 | DEBUG    | src.scan | Input scan started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/raw
+2026-08-05 19:36:25 | INFO     | src.scan | Input scan completed | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/raw | files discovered=5
+2026-08-05 19:36:25 | DEBUG    | src.scan | Discovered input files | files=['fleet_maintenance_calgary_2026_07_22.json', 'fleet_maintenance_edmonton_2026_07_22.json', 'fleet_maintenance_grande_prairie_2026_07_22.json', 'fleet_maintenance_lethbridge_2026_07_22.json', 'fleet_maintenance_red_deer_2026_07_22.json']
+2026-08-05 19:36:25 | INFO     | src.process | Batch processing started | run_id=fleet_20260806T013625Z | total_files=5
+2026-08-05 19:36:25 | INFO     | src.process | Batch progress run | run_id=fleet_20260806T013625Z | total_files=5 | position=1 | file_name=fleet_maintenance_calgary_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | src.process | File processing started | run_id=fleet_20260806T013625Z | file_name=fleet_maintenance_calgary_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | src.read | File read started | file_path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/raw/fleet_maintenance_calgary_2026_07_22.json
+2026-08-05 19:36:25 | INFO     | src.read | File read complete | file=fleet_maintenance_calgary_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | root | Table extraction started
+2026-08-05 19:36:25 | INFO     | src.extract | Table extraction completed | raw_record_count=18
+2026-08-05 19:36:25 | DEBUG    | src.extract | Batch_id extraction started
+2026-08-05 19:36:25 | INFO     | src.extract | Batch_id extraction completed | batch_id=FLT-YYC-20260722-002
+2026-08-05 19:36:25 | DEBUG    | src.extract | Depot extraction started
+2026-08-05 19:36:25 | INFO     | src.extract | Depot extraction completed | depot=Calgary South
+2026-08-05 19:36:25 | DEBUG    | src.convert | Type conversion started | input_record_count=18
+2026-08-05 19:36:25 | INFO     | src.convert | Type conversion completed | records_processed=18 | type_conversion_error_count=5
+2026-08-05 19:36:25 | DEBUG    | src.invalid | Initial record screening | total_converted_records=18
+2026-08-05 19:36:25 | INFO     | src.invalid | Initial record screening completed | valid_raw_records=11 | invalid_records=7
+2026-08-05 19:36:25 | DEBUG    | src.valid | Record deduplication started | valid_raw=11
+2026-08-05 19:36:25 | INFO     | src.valid | Record deduplication completed | unique_valid_records=9 | duplicate_records=2
+2026-08-05 19:36:25 | DEBUG    | src.transform | Transformation started | valid_record=9
+2026-08-05 19:36:25 | INFO     | src.transform | Transformation completed | valid_record=9 | transformed_count=9
+2026-08-05 19:36:25 | DEBUG    | src.depot | Depot generation started | transformed_count=9
+2026-08-05 19:36:25 | INFO     | src.depot | Depot generation completed | transformed_count=9 | depot_summary=7
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/valid/fleet_maintenance_calgary_2026_07_22_valid.csv | row_count=9
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_calgary_2026_07_22_valid.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/valid/fleet_maintenance_calgary_2026_07_22_valid.csv | row_count=9
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/invalid/fleet_maintenance_calgary_2026_07_22_invalid.csv | row_count=7
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_calgary_2026_07_22_invalid.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/invalid/fleet_maintenance_calgary_2026_07_22_invalid.csv | row_count=7
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/duplicates/fleet_maintenance_calgary_2026_07_22_duplicate.csv | row_count=2
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_calgary_2026_07_22_duplicate.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/duplicates/fleet_maintenance_calgary_2026_07_22_duplicate.csv | row_count=2
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/transformed/fleet_maintenance_calgary_2026_07_22_transformed.csv | row_count=9
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_calgary_2026_07_22_transformed.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/transformed/fleet_maintenance_calgary_2026_07_22_transformed.csv | row_count=9
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/depot_summary/fleet_maintenance_calgary_2026_07_22_summary.csv | row_count=7
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_calgary_2026_07_22_summary.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/depot_summary/fleet_maintenance_calgary_2026_07_22_summary.csv | row_count=7
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/run_summary/fleet_maintenance_calgary_2026_07_22_filemetrics.csv | row_count=1
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_calgary_2026_07_22_filemetrics.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/run_summary/fleet_maintenance_calgary_2026_07_22_filemetrics.csv | row_count=1
+2026-08-05 19:36:25 | INFO     | src.process | File processing completed | run_id=fleet_20260806T013625Z |  file_name=fleet_maintenance_calgary_2026_07_22.json | raw=18 | valid=9 | invalid=7 | duplicate=2 | transformed=9 | depot=7 | duration_seconds=0.005
+2026-08-05 19:36:25 | INFO     | src.process | Batch progress run | run_id=fleet_20260806T013625Z | total_files=5 | position=2 | file_name=fleet_maintenance_edmonton_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | src.process | File processing started | run_id=fleet_20260806T013625Z | file_name=fleet_maintenance_edmonton_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | src.read | File read started | file_path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/raw/fleet_maintenance_edmonton_2026_07_22.json
+2026-08-05 19:36:25 | INFO     | src.read | File read complete | file=fleet_maintenance_edmonton_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | root | Table extraction started
+2026-08-05 19:36:25 | INFO     | src.extract | Table extraction completed | raw_record_count=18
+2026-08-05 19:36:25 | DEBUG    | src.extract | Batch_id extraction started
+2026-08-05 19:36:25 | INFO     | src.extract | Batch_id extraction completed | batch_id=FLT-EDM-20260722-001
+2026-08-05 19:36:25 | DEBUG    | src.extract | Depot extraction started
+2026-08-05 19:36:25 | INFO     | src.extract | Depot extraction completed | depot=Edmonton North
+2026-08-05 19:36:25 | DEBUG    | src.convert | Type conversion started | input_record_count=18
+2026-08-05 19:36:25 | INFO     | src.convert | Type conversion completed | records_processed=18 | type_conversion_error_count=0
+2026-08-05 19:36:25 | DEBUG    | src.invalid | Initial record screening | total_converted_records=18
+2026-08-05 19:36:25 | INFO     | src.invalid | Initial record screening completed | valid_raw_records=12 | invalid_records=6
+2026-08-05 19:36:25 | DEBUG    | src.valid | Record deduplication started | valid_raw=12
+2026-08-05 19:36:25 | INFO     | src.valid | Record deduplication completed | unique_valid_records=11 | duplicate_records=1
+2026-08-05 19:36:25 | DEBUG    | src.transform | Transformation started | valid_record=11
+2026-08-05 19:36:25 | INFO     | src.transform | Transformation completed | valid_record=11 | transformed_count=11
+2026-08-05 19:36:25 | DEBUG    | src.depot | Depot generation started | transformed_count=11
+2026-08-05 19:36:25 | INFO     | src.depot | Depot generation completed | transformed_count=11 | depot_summary=9
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/valid/fleet_maintenance_edmonton_2026_07_22_valid.csv | row_count=11
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_edmonton_2026_07_22_valid.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/valid/fleet_maintenance_edmonton_2026_07_22_valid.csv | row_count=11
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/invalid/fleet_maintenance_edmonton_2026_07_22_invalid.csv | row_count=6
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_edmonton_2026_07_22_invalid.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/invalid/fleet_maintenance_edmonton_2026_07_22_invalid.csv | row_count=6
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/duplicates/fleet_maintenance_edmonton_2026_07_22_duplicate.csv | row_count=1
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_edmonton_2026_07_22_duplicate.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/duplicates/fleet_maintenance_edmonton_2026_07_22_duplicate.csv | row_count=1
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/transformed/fleet_maintenance_edmonton_2026_07_22_transformed.csv | row_count=11
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_edmonton_2026_07_22_transformed.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/transformed/fleet_maintenance_edmonton_2026_07_22_transformed.csv | row_count=11
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/depot_summary/fleet_maintenance_edmonton_2026_07_22_summary.csv | row_count=9
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_edmonton_2026_07_22_summary.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/depot_summary/fleet_maintenance_edmonton_2026_07_22_summary.csv | row_count=9
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/run_summary/fleet_maintenance_edmonton_2026_07_22_filemetrics.csv | row_count=1
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_edmonton_2026_07_22_filemetrics.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/run_summary/fleet_maintenance_edmonton_2026_07_22_filemetrics.csv | row_count=1
+2026-08-05 19:36:25 | INFO     | src.process | File processing completed | run_id=fleet_20260806T013625Z |  file_name=fleet_maintenance_edmonton_2026_07_22.json | raw=18 | valid=11 | invalid=6 | duplicate=1 | transformed=11 | depot=9 | duration_seconds=0.003
+2026-08-05 19:36:25 | INFO     | src.process | Batch progress run | run_id=fleet_20260806T013625Z | total_files=5 | position=3 | file_name=fleet_maintenance_grande_prairie_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | src.process | File processing started | run_id=fleet_20260806T013625Z | file_name=fleet_maintenance_grande_prairie_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | src.read | File read started | file_path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/raw/fleet_maintenance_grande_prairie_2026_07_22.json
+2026-08-05 19:36:25 | INFO     | src.read | File read complete | file=fleet_maintenance_grande_prairie_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | root | Table extraction started
+2026-08-05 19:36:25 | INFO     | src.extract | Table extraction completed | raw_record_count=16
+2026-08-05 19:36:25 | DEBUG    | src.extract | Batch_id extraction started
+2026-08-05 19:36:25 | INFO     | src.extract | Batch_id extraction completed | batch_id=FLT-GPW-20260722-005
+2026-08-05 19:36:25 | DEBUG    | src.extract | Depot extraction started
+2026-08-05 19:36:25 | INFO     | src.extract | Depot extraction completed | depot=Grande Prairie West
+2026-08-05 19:36:25 | DEBUG    | src.convert | Type conversion started | input_record_count=16
+2026-08-05 19:36:25 | INFO     | src.convert | Type conversion completed | records_processed=16 | type_conversion_error_count=1
+2026-08-05 19:36:25 | DEBUG    | src.invalid | Initial record screening | total_converted_records=16
+2026-08-05 19:36:25 | INFO     | src.invalid | Initial record screening completed | valid_raw_records=0 | invalid_records=16
+2026-08-05 19:36:25 | DEBUG    | src.valid | Record deduplication started | valid_raw=0
+2026-08-05 19:36:25 | INFO     | src.valid | Record deduplication completed | unique_valid_records=0 | duplicate_records=0
+2026-08-05 19:36:25 | DEBUG    | src.transform | Transformation started | valid_record=0
+2026-08-05 19:36:25 | INFO     | src.transform | Transformation completed | valid_record=0 | transformed_count=0
+2026-08-05 19:36:25 | DEBUG    | src.depot | Depot generation started | transformed_count=0
+2026-08-05 19:36:25 | INFO     | src.depot | Depot generation completed | transformed_count=0 | depot_summary=0
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/valid/fleet_maintenance_grande_prairie_2026_07_22_valid.csv | row_count=0
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_grande_prairie_2026_07_22_valid.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/valid/fleet_maintenance_grande_prairie_2026_07_22_valid.csv | row_count=0
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/invalid/fleet_maintenance_grande_prairie_2026_07_22_invalid.csv | row_count=16
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_grande_prairie_2026_07_22_invalid.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/invalid/fleet_maintenance_grande_prairie_2026_07_22_invalid.csv | row_count=16
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/duplicates/fleet_maintenance_grande_prairie_2026_07_22_duplicate.csv | row_count=0
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_grande_prairie_2026_07_22_duplicate.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/duplicates/fleet_maintenance_grande_prairie_2026_07_22_duplicate.csv | row_count=0
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/transformed/fleet_maintenance_grande_prairie_2026_07_22_transformed.csv | row_count=0
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_grande_prairie_2026_07_22_transformed.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/transformed/fleet_maintenance_grande_prairie_2026_07_22_transformed.csv | row_count=0
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/depot_summary/fleet_maintenance_grande_prairie_2026_07_22_summary.csv | row_count=0
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_grande_prairie_2026_07_22_summary.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/depot_summary/fleet_maintenance_grande_prairie_2026_07_22_summary.csv | row_count=0
+2026-08-05 19:36:25 | DEBUG    | src.write | Output writing started | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/run_summary/fleet_maintenance_grande_prairie_2026_07_22_filemetrics.csv | row_count=1
+2026-08-05 19:36:25 | INFO     | src.write | Output writing completed | file=fleet_maintenance_grande_prairie_2026_07_22_filemetrics.csv | path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/processed/run_summary/fleet_maintenance_grande_prairie_2026_07_22_filemetrics.csv | row_count=1
+2026-08-05 19:36:25 | INFO     | src.process | File processing completed | run_id=fleet_20260806T013625Z |  file_name=fleet_maintenance_grande_prairie_2026_07_22.json | raw=16 | valid=0 | invalid=16 | duplicate=0 | transformed=0 | depot=0 | duration_seconds=0.003
+2026-08-05 19:36:25 | INFO     | src.process | Batch progress run | run_id=fleet_20260806T013625Z | total_files=5 | position=4 | file_name=fleet_maintenance_lethbridge_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | src.process | File processing started | run_id=fleet_20260806T013625Z | file_name=fleet_maintenance_lethbridge_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | src.read | File read started | file_path=/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/data/raw/fleet_maintenance_lethbridge_2026_07_22.json
+2026-08-05 19:36:25 | INFO     | src.read | File read complete | file=fleet_maintenance_lethbridge_2026_07_22.json
+2026-08-05 19:36:25 | DEBUG    | root | Table extraction started
+2026-08-05 19:36:25 | WARNING  | root | No valid table found in json payload
+2026-08-05 19:36:25 | ERROR    | root | unhandled pipeline failure | pipeline_name=Fleet maintenance fuel compliance | run_id=fleet_20260806T013625Z
+Traceback (most recent call last):
+  File "/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/src/process.py", line 102, in process_one_file
+    extracted = extract_json(raw)
+  File "/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/src/extract.py", line 37, in extract_json
+    raise ValueError("could not find a valid list of dictionaries")
+ValueError: could not find a valid list of dictionaries
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/src/execute.py", line 47, in <module>
+    pipeline_metrics = execute_fleet_maintenance_compliance_pipeline(run_id)
+  File "/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/src/execute.py", line 27, in execute_fleet_maintenance_compliance_pipeline
+    file_results = process_all_files(run_id)
+  File "/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/src/process.py", line 347, in process_all_files
+    file_result = process_one_file(file_path, run_id)
+  File "/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/src/process.py", line 268, in process_one_file
+    return handle_file_failure(
+        run_id=run_id,
+    ...<6 lines>...
+        file_start_time=file_start_time,
+    )
+  File "/home/sheigh/engineering_hub/02data_engineering/python-phase-2/python_optimized/zoezi_field/09fleet_maintenance_fuel_compliance_pipeline/src/process.py", line 51, in handle_file_failure
+    duration = perf_counter - file_start_time
+               ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'float'

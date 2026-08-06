@@ -1,8 +1,13 @@
 # Duplicates: inspection_id + vehicle_id + inspection_date
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 
 def get_duplicates_valid(valid_raw):
 
+    logger.debug("Record deduplication started | valid_raw=%d", len(valid_raw))
     valid = []
     duplicates = []
     seen_dups = set()
@@ -23,4 +28,9 @@ def get_duplicates_valid(valid_raw):
             seen_dups.add(key_dups)
             valid.append(van.copy())
 
+    logger.info(
+        "Record deduplication completed | unique_valid_records=%d | duplicate_records=%d",
+        len(valid),
+        len(duplicates),
+    )
     return duplicates, valid

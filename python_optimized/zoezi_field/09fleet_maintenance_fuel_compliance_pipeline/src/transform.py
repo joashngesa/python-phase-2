@@ -27,6 +27,10 @@
     -->Derive this from vehicle status, defect state, and maintenance risk.
 """
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 
 def get_fuel_price(van):
     """
@@ -106,6 +110,7 @@ def get_operational_readiness(vehicle_status, defect_reported, maintenance_risk)
 
 def transform_data(valid):
 
+    logger.debug("Transformation started | valid_record=%d", len(valid))
     transformed = []
 
     for van in valid:
@@ -138,7 +143,7 @@ def transform_data(valid):
 
         transformed.append(transmute)
 
-    return [
+    transformed_data = [
         {
             "inspection_id": vehicle.get("inspection_id"),
             "vehicle_id": vehicle.get("vehicle_id"),
@@ -160,3 +165,11 @@ def transform_data(valid):
         }
         for vehicle in transformed
     ]
+
+    logger.info(
+        "Transformation completed | valid_record=%d | transformed_count=%d",
+        len(valid),
+        len(transformed_data),
+    )
+
+    return transformed_data

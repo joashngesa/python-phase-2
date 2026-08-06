@@ -1,8 +1,8 @@
 inspection_id|vehicle_id|inspection_date|vehicle_type|odometer_km|fuel_litres|fuel_cost_cad|engine_temperature_c|brake_condition|tire_condition|defect_reported|vehicle_status|generated_at|source_file|error_reasons
-INS-YYC-2005|SRV-091|2026-07-22|Service Vehicle||43.0|67.51|86.7|Good|Good|False|Available|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json|odometer_km is missing
-INS-YYC-2006|VAN-205|2026-07-22|Delivery Van|114900||79.2|90.3|Good|Good|False|Available|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json|fuel_litres is missing
-INS-YYC-2007|BOX-408|2026-07-22|Box Truck|167200|86.0||98.6|Good|Monitor|False|In Service|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json|fuel_cost_cad is missing
-INS-YYC-2008|TRK-509|2026-07-22|Refrigerated Truck|255600|121.5|188.33||Good|Good|True|Out of Service|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json|engine_temperature_c is missing
-INS-YYC-2009|TRL-612||Tractor Trailer|715400|230.0|358.8|107.4|Monitor|Monitor|False|In Service|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json|inspection_date is missing or blank
-INS-YYC-2011|VAN-214|2026-07-22|Delivery Van|93600|0.0|52.0|89.8|Good|Good|False|Available|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json|when fuel_litres is 0, fuel_cost must be 0 
-INS-YYC-2017|VAN-222|2026-07-22|Delivery Van|118400|62.0|96.1|92.6|Good|Critical|True|Available|2026-07-27 01:23:52.758743|fleet_maintenance_calgary_2026_07_22.json|when tire is critical, status must be maintenance / out of service& if defect is reported, status can not be available
+INS-YYC-2005|SRV-091|2026-07-22|Service Vehicle||43.0|67.51|86.7|Good|Good|False|Available|2026-08-05 19:36:25.649187|fleet_maintenance_calgary_2026_07_22.json|odometer_km is missing
+INS-YYC-2006|VAN-205|2026-07-22|Delivery Van|114900||79.2|90.3|Good|Good|False|Available|2026-08-05 19:36:25.649187|fleet_maintenance_calgary_2026_07_22.json|fuel_litres is missing
+INS-YYC-2007|BOX-408|2026-07-22|Box Truck|167200|86.0||98.6|Good|Monitor|False|In Service|2026-08-05 19:36:25.649187|fleet_maintenance_calgary_2026_07_22.json|fuel_cost_cad is missing
+INS-YYC-2008|TRK-509|2026-07-22|Refrigerated Truck|255600|121.5|188.33||Good|Good|True|Out of Service|2026-08-05 19:36:25.649187|fleet_maintenance_calgary_2026_07_22.json|engine_temperature_c is missing
+INS-YYC-2009|TRL-612||Tractor Trailer|715400|230.0|358.8|107.4|Monitor|Monitor|False|In Service|2026-08-05 19:36:25.649187|fleet_maintenance_calgary_2026_07_22.json|inspection_date is missing or blank
+INS-YYC-2011|VAN-214|2026-07-22|Delivery Van|93600|0.0|52.0|89.8|Good|Good|False|Available|2026-08-05 19:36:25.649187|fleet_maintenance_calgary_2026_07_22.json|when fuel_litres is 0, fuel_cost must be 0 
+INS-YYC-2017|VAN-222|2026-07-22|Delivery Van|118400|62.0|96.1|92.6|Good|Critical|True|Available|2026-08-05 19:36:25.649187|fleet_maintenance_calgary_2026_07_22.json|when tire is critical, status must be maintenance / out of service& if defect is reported, status can not be available

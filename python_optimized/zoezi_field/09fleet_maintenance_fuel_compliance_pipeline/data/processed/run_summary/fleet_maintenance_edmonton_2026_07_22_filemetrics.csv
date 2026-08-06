@@ -1,2 +1,2 @@
 file_name|depot|batch_id|processing_status|raw_count|valid_count|invalid_count|duplicate_count|transformed_count|depot_summary_count|error_type|error_message
-fleet_maintenance_edmonton_2026_07_22.json|Edmonton North|FLT-EDM-20260722-001|completed with invalid records|18|11|6|1|11|9||
+fleet_maintenance_edmonton_2026_07_22.json|Edmonton North|FLT-EDM-20260722-001|completed with invalid & duplicates|18|11|6|1|11|9||

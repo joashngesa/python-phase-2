@@ -1,4 +1,7 @@
 from datetime import datetime, date
+import logging
+
+logger = logging.getLogger(__name__)
 
 """
 Conversion rules:
@@ -41,7 +44,9 @@ def parse_dates(column, field_name):
 def convert_data(extracted):
 
     converted = []
+    conversion_error_count = 0
 
+    logger.debug("Type conversion started | input_record_count=%d", len(extracted))
     # inspection_date validation
 
     for car in extracted:
@@ -56,6 +61,7 @@ def convert_data(extracted):
 
         if inspection_date_error:
             add_error(truck, inspection_date_error)
+            conversion_error_count += 1
 
         # convert odometer_km
 
@@ -70,6 +76,7 @@ def convert_data(extracted):
             except (ValueError, TypeError):
                 truck["odometer_km"] = None
                 add_error(truck, "odometer_km should be integer")
+                conversion_error_count += 1
 
         # convert fuel litres
         fuel_litres = truck.get("fuel_litres")
@@ -83,6 +90,7 @@ def convert_data(extracted):
             except (ValueError, TypeError):
                 truck["fuel_litres"] = None
                 add_error(truck, "fuel_litres should be float")
+                conversion_error_count += 1
 
         # convert fuel_cost_cad
         fuel_cost_cad = truck.get("fuel_cost_cad")
@@ -96,6 +104,7 @@ def convert_data(extracted):
             except (ValueError, TypeError):
                 truck["fuel_cost_cad"] = None
                 add_error(truck, "fuel_cost_cad should be float")
+                conversion_error_count += 1
 
         # convert engine_temperature_c
         engine_temperature_c = truck.get("engine_temperature_c")
@@ -109,6 +118,7 @@ def convert_data(extracted):
             except (ValueError, TypeError):
                 truck["engine_temperature_c"] = None
                 add_error(truck, "engine_temperature_c should be float")
+                conversion_error_count += 1
 
         # convert defect_reported
         defect_reported = truck.get("defect_reported")
@@ -117,18 +127,25 @@ def convert_data(extracted):
             add_error(truck, "defect_reported is missing or blank")
 
             # normalize to a clean lowercase string
-        value_string = str(defect_reported).strip().lower()
-
-        if value_string in ("true", 1):
-            truck["defect_reported"] = True
-
-        elif value_string in ("false", 0):
-            truck["defect_reported"] = False
-
         else:
-            truck["defect_reported"] = None
-            add_error(truck, "defect_reported should be a boolean value")
+            value_string = str(defect_reported).strip().lower()
+
+            if value_string in ("true", "1", "yes"):
+                truck["defect_reported"] = True
+
+            elif value_string in ("false", "0", "no"):
+                truck["defect_reported"] = False
+
+            else:
+                truck["defect_reported"] = None
+                add_error(truck, "defect_reported should be a boolean value")
+                conversion_error_count += 1
 
         converted.append(truck)
+    logger.info(
+        "Type conversion completed | records_processed=%d | type_conversion_error_count=%d",
+        len(converted),
+        conversion_error_count,
+    )
 
     return converted

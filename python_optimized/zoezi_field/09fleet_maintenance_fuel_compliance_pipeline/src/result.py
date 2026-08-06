@@ -14,38 +14,44 @@ Expected output:
     error_message
 """
 
+from src.utility import get_run_id
+
+run_id = get_run_id()
+
 
 def build_success_metrics(
-    file_name,
-    depot,
-    batch_id,
-    raw_count,
-    valid_count,
-    invalid_count,
-    duplicate_count,
-    transformed_count,
-    depot_summary_count,
-):
+    run_id: str,
+    file_name: str,
+    depot: str,
+    batch_id: str,
+    raw_count: int,
+    valid_count: int,
+    invalid_count: int,
+    duplicate_count: int,
+    transformed_count: int,
+    depot_summary_count: int,
+) -> dict:
     """
     this function is used to summarize the score of successfully processed files ⏳
     """
 
-    if invalid_count > 0:
+    if invalid_count > 0 and duplicate_count > 0:
+        processing_status = "completed with invalid & duplicates"
+
+    elif invalid_count > 0:
         processing_status = "completed with invalid records"
 
     elif duplicate_count > 0:
-        processing_status = "completed with valid records"
-
-    elif invalid_count > 0 and duplicate_count > 0:
-        processing_status = "completed with ivalid & duplicates"
+        processing_status = "completed with duplicate records"
 
     elif raw_count > 0 and valid_count == 0:
-        processing_status = "completed with no valid record;failed business logic"
+        processing_status = "completed with no valid record"
 
     elif invalid_count == 0:
         processing_status = "success"
 
     return {
+        "run_id": run_id,
         "file_name": file_name,
         "depot": depot,
         "batch_id": batch_id,
@@ -61,12 +67,20 @@ def build_success_metrics(
     }
 
 
-def build_failure_metrics(file_name, depot, batch_id, processing_status, error):
+def build_failure_metrics(
+    file_name: str,
+    depot: str,
+    batch_id: str,
+    processing_status: str,
+    error: Exception,
+    run_id: str = None,
+) -> dict:
     """
     this function is used to summarize the score of failed processed files 🧰
     """
 
     return {
+        "run_id": run_id,
         "file_name": file_name,
         "depot": depot,
         "batch_id": batch_id,
@@ -77,6 +91,6 @@ def build_failure_metrics(file_name, depot, batch_id, processing_status, error):
         "duplicate_count": 0,
         "transformed_count": 0,
         "depot_summary_count": 0,
-        "error_type": type(error).__name__,
-        "error_message": str(error),
+        "error_type": type(error).__name__ if error else "None",
+        "error_message": str(error) if error else "None",
     }

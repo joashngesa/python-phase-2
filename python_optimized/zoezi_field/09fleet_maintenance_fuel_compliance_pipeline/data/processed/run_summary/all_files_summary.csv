@@ -1,6 +1,0 @@
-file_name|depot|batch_id|processing_status|raw_count|valid_count|invalid_count|duplicate_count|transformed_count|depot_summary_count|error_type|error_message
-fleet_maintenance_calgary_2026_07_22.json|Calgary South|FLT-YYC-20260722-002|completed with invalid records|18|9|7|2|9|7||
-fleet_maintenance_edmonton_2026_07_22.json|Edmonton North|FLT-EDM-20260722-001|completed with invalid records|18|11|6|1|11|9||
-fleet_maintenance_grande_prairie_2026_07_22.json|Grande Prairie West|FLT-GPW-20260722-005|completed with invalid records|16|0|16|0|0|0||
-fleet_maintenance_lethbridge_2026_07_22.json|Uknown|Uknown|invalid value during extracting|0|0|0|0|0|0|ValueError|could not find a valid list of dictionary
-fleet_maintenance_red_deer_2026_07_22.json|Uknown|Uknown|JSON parsing error|0|0|0|0|0|0|JSONDecodeError|Expecting ',' delimiter: line 12 column 9 (char 1194)

@@ -1,27 +1,32 @@
 import csv
 from pathlib import Path
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def write_output(output_path, data, output_delimiter, output_columns):
 
     folder_output = Path(output_path)
+    logger.debug(
+        "Output writing started | path=%s | row_count=%d", folder_output, len(data)
+    )
 
-    try:
-        folder_output.parent.mkdir(parents=True, exist_ok=True)
+    folder_output.parent.mkdir(parents=True, exist_ok=True)
 
-        with folder_output.open("w", encoding="utf-8", newline="") as file:
-            write = csv.DictWriter(
-                file,
-                delimiter=output_delimiter,
-                fieldnames=output_columns,
-                extrasaction="ignore",
-            )
-            write.writeheader()
-            write.writerows(data)
-            print(f"\n📬 Output path: {folder_output.resolve()}")
+    with folder_output.open("w", encoding="utf-8", newline="") as file:
+        write = csv.DictWriter(
+            file,
+            delimiter=output_delimiter,
+            fieldnames=output_columns,
+            extrasaction="ignore",
+        )
+        write.writeheader()
+        write.writerows(data)
 
-    except PermissionError as error:
-        print(f"Permission denied when writing to: {folder_output.resolve()}")
-
-    except OSError as error:
-        print(f"OSError occured when writing the files: {error}")
+    logger.info(
+        "Output writing completed | file=%s | path=%s | row_count=%d",
+        folder_output.name,
+        folder_output.resolve(),
+        len(data),
+    )

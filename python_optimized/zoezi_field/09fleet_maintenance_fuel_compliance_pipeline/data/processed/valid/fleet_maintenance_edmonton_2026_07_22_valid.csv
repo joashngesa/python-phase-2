@@ -1,12 +1,12 @@
 inspection_id|vehicle_id|inspection_date|vehicle_type|odometer_km|fuel_litres|fuel_cost_cad|engine_temperature_c|brake_condition|tire_condition|defect_reported|vehicle_status|generated_at|source_file
-INS-EDM-1001|TRK-201|2026-07-22|Refrigerated Truck|184500|92.5|142.8|89.5|Good|Good|False|Available|2026-07-27 01:23:52.762651|fleet_maintenance_edmonton_2026_07_22.json
-INS-EDM-1002|VAN-104|2026-07-22|Delivery Van|96210|54.0|82.35|91.2|Good|Monitor|False|In Service|2026-07-27 01:23:52.762651|fleet_maintenance_edmonton_2026_07_22.json
-INS-EDM-1003|BOX-310|2026-07-22|Box Truck|221400|110.0|169.4|103.5|Monitor|Good|False|In Service|2026-07-27 01:23:52.762651|fleet_maintenance_edmonton_2026_07_22.json
-INS-EDM-1004|TRL-410|2026-07-22|Tractor Trailer|502120|0.0|0.0|87.0|Good|Good|False|Available|2026-07-27 01:23:52.762651|fleet_maintenance_edmonton_2026_07_22.json
-INS-EDM-1005|SRV-015|2026-07-22|Service Vehicle|73400|48.0|75.6|98.2|Good|Good|True|Maintenance Required|2026-07-27 01:23:52.762651|fleet_maintenance_edmonton_2026_07_22.json
-INS-EDM-1006|TRK-205|2026-07-22|Refrigerated Truck|198780|125.0|193.75|112.3|Monitor|Monitor|True|Out of Service|2026-07-27 01:23:52.762651|fleet_maintenance_edmonton_2026_07_22.json
-INS-EDM-1007|VAN-109|2026-07-22|Delivery Van|120300|61.5|94.1|88.8|Good|Good|False|Available|2026-07-27 01:23:52.762651|fleet_maintenance_edmonton_2026_07_22.json
-INS-EDM-1008|BOX-314|2026-07-22|Box Truck|176500|88.0|136.4|99.9|Good|Monitor|False|In Service|2026-07-27 01:23:52.762651|fleet_maintenance_edmonton_2026_07_22.json
-INS-EDM-1009|TRL-417|2026-07-22|Tractor Trailer|610250|210.0|325.5|108.0|Monitor|Good|False|In Service|2026-07-27 01:23:52.762651|fleet_maintenance_edmonton_2026_07_22.json
-INS-EDM-1010|SRV-019|2026-07-22|Service Vehicle|65420|42.0|64.7|85.4|Good|Good|False|Available|2026-07-27 01:23:52.762651|fleet_maintenance_edmonton_2026_07_22.json
-INS-EDM-1017|BOX-330|2026-07-22|Box Truck|133900|84.0|129.6|100.5|Monitor|Monitor|False|In Service|2026-07-27 01:23:52.762651|fleet_maintenance_edmonton_2026_07_22.json
+INS-EDM-1001|TRK-201|2026-07-22|Refrigerated Truck|184500|92.5|142.8|89.5|Good|Good|False|Available|2026-08-05 19:36:25.654732|fleet_maintenance_edmonton_2026_07_22.json
+INS-EDM-1002|VAN-104|2026-07-22|Delivery Van|96210|54.0|82.35|91.2|Good|Monitor|False|In Service|2026-08-05 19:36:25.654732|fleet_maintenance_edmonton_2026_07_22.json
+INS-EDM-1003|BOX-310|2026-07-22|Box Truck|221400|110.0|169.4|103.5|Monitor|Good|False|In Service|2026-08-05 19:36:25.654732|fleet_maintenance_edmonton_2026_07_22.json
+INS-EDM-1004|TRL-410|2026-07-22|Tractor Trailer|502120|0.0|0.0|87.0|Good|Good|False|Available|2026-08-05 19:36:25.654732|fleet_maintenance_edmonton_2026_07_22.json
+INS-EDM-1005|SRV-015|2026-07-22|Service Vehicle|73400|48.0|75.6|98.2|Good|Good|True|Maintenance Required|2026-08-05 19:36:25.654732|fleet_maintenance_edmonton_2026_07_22.json
+INS-EDM-1006|TRK-205|2026-07-22|Refrigerated Truck|198780|125.0|193.75|112.3|Monitor|Monitor|True|Out of Service|2026-08-05 19:36:25.654732|fleet_maintenance_edmonton_2026_07_22.json
+INS-EDM-1007|VAN-109|2026-07-22|Delivery Van|120300|61.5|94.1|88.8|Good|Good|False|Available|2026-08-05 19:36:25.654732|fleet_maintenance_edmonton_2026_07_22.json
+INS-EDM-1008|BOX-314|2026-07-22|Box Truck|176500|88.0|136.4|99.9|Good|Monitor|False|In Service|2026-08-05 19:36:25.654732|fleet_maintenance_edmonton_2026_07_22.json
+INS-EDM-1009|TRL-417|2026-07-22|Tractor Trailer|610250|210.0|325.5|108.0|Monitor|Good|False|In Service|2026-08-05 19:36:25.654732|fleet_maintenance_edmonton_2026_07_22.json
+INS-EDM-1010|SRV-019|2026-07-22|Service Vehicle|65420|42.0|64.7|85.4|Good|Good|False|Available|2026-08-05 19:36:25.654732|fleet_maintenance_edmonton_2026_07_22.json
+INS-EDM-1017|BOX-330|2026-07-22|Box Truck|133900|84.0|129.6|100.5|Monitor|Monitor|False|In Service|2026-08-05 19:36:25.654732|fleet_maintenance_edmonton_2026_07_22.json

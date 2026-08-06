@@ -1,6 +1,8 @@
-from datetime import datetime, date
+import logging
 import json
 from pathlib import Path
+from datetime import datetime, date
+from time import perf_counter
 
 from src.config import INPUT_DIR
 from src.config import FILE_PATTERN
@@ -18,7 +20,6 @@ from src.config import DUPLICATE_COLUMNS
 from src.config import TRANSFORMED_COLUMNS
 from src.config import DEPOT_SUMMARY_COLUMNS
 from src.config import FILE_METRICS_COLUMN
-from src.config import PIPELINE_METRICS_COLUMN
 
 from src.scan import scan_folder
 from src.read import read_file
@@ -32,10 +33,45 @@ from src.transform import transform_data
 from src.depot import get_depot_summary
 from src.write import write_output
 from src.result import build_success_metrics, build_failure_metrics
-from src.metrics import pipeline_summary
+
+logger = logging.getLogger(__name__)
 
 
-def process_one_file(file_path):
+def handle_file_failure(
+    run_id,
+    file_path: Path,
+    depot: str,
+    batch_id: str,
+    processing_status: str,
+    stage: str,
+    error: Exception,
+    file_start_time: float,
+) -> dict:
+
+    duration = perf_counter - file_start_time
+
+    file_result = build_failure_metrics(
+        file_name=file_path.name,
+        depot=depot,
+        batch_id=batch_id,
+        processing_status=processing_status,
+        error=error,
+    )
+
+    logger.exception(
+        "File processing failed | run_id=%s | file_name=%s | stage=%s | status=%s | error_type=%s | duration_seconds=%.3f",
+        run_id,
+        file_path.name,
+        stage,
+        processing_status,
+        type(error).__name__,
+        duration,
+    )
+
+    return file_result
+
+
+def process_one_file(file_path: str | Path, run_id: str) -> dict:
     """
     the function processes one file at a time
     argument:
@@ -46,21 +82,28 @@ def process_one_file(file_path):
         - the outcome of this function will be used as the argument for process_all_files
     """
 
+    file_start_time = perf_counter()
     file_path = Path(file_path)
-    depot = "Uknown"
-    batch_id = "Uknown"
+    depot = "Unknown"
+    batch_id = "Unknown"
     stage = "Initialization"
 
+    logger.debug(
+        "File processing started | run_id=%s | file_name=%s",
+        run_id,
+        file_path.name,
+    )
+
     try:
-        stage = "reading"
+        stage = "read"
         raw = read_file(file_path)
 
-        stage = "extracting"
+        stage = "extract"
         extracted = extract_json(raw)
         batch_id = extract_batch_id(raw)
         depot = extract_depot(raw)
 
-        stage = "enriching"
+        stage = "enrich"
         generated_at = datetime.now()
         source_file = file_path.name
 
@@ -68,25 +111,25 @@ def process_one_file(file_path):
             row["generated_at"] = generated_at
             row["source_file"] = source_file
 
-        stage = "converting"
+        stage = "convert"
         converted = convert_data(extracted)
 
-        stage = "validating"
+        stage = "validate"
         invalid, valid_raw = get_invalid(converted)
 
-        stage = "detecting duplicates"
+        stage = "deduplicate"
         duplicates, valid = get_duplicates_valid(valid_raw)
 
         for row in valid:
             row["depot"] = depot
 
-        stage = "transforming"
+        stage = "transform"
         transformed = transform_data(valid)
 
-        stage = "depot_summarizing"
+        stage = "summarize"
         depot_summary = get_depot_summary(transformed)
 
-        stage = "writing file outputs"
+        stage = "write_outputs"
         file_stem = file_path.stem
         write_output(
             VALID_DIR / f"{file_stem}_valid.csv", valid, OUTPUT_DELIMITER, VALID_COLUMNS
@@ -120,8 +163,9 @@ def process_one_file(file_path):
             DEPOT_SUMMARY_COLUMNS,
         )
 
-        stage = "building file_results"
+        stage = "build_file_metrics"
         file_result = build_success_metrics(
+            run_id=run_id,
             file_name=file_path.name,
             depot=depot,
             batch_id=batch_id,
@@ -133,7 +177,7 @@ def process_one_file(file_path):
             depot_summary_count=len(depot_summary),
         )
 
-        stage = "writing files output"
+        stage = "write_file_metrics"
         write_output(
             RUN_SUMMARY_DIR / f"{file_stem}_filemetrics.csv",
             [file_result],
@@ -141,46 +185,111 @@ def process_one_file(file_path):
             FILE_METRICS_COLUMN,
         )
 
+        duration = perf_counter() - file_start_time
+        logger.info(
+            "File processing completed | "
+            "run_id=%s |  file_name=%s | "
+            "raw=%d | valid=%d | invalid=%d | "
+            "duplicate=%d | transformed=%d | depot=%d | duration_seconds=%.3f",
+            run_id,
+            file_path.name,
+            file_result["raw_count"],
+            file_result["valid_count"],
+            file_result["invalid_count"],
+            file_result["duplicate_count"],
+            file_result["transformed_count"],
+            file_result["depot_summary_count"],
+            duration,
+        )
+
         return file_result
 
     except json.JSONDecodeError as error:
-        status = "JSON parsing error"
-        caught_error = error
+        return handle_file_failure(
+            run_id=run_id,
+            file_path=file_path.name,
+            depot=depot,
+            batch_id=batch_id,
+            processing_status="JSON parsing error",
+            stage=stage,
+            error=error,
+            file_start_time=file_start_time,
+        )
 
     except UnicodeDecodeError as error:
-        status = "encoding failed"
-        caught_error = error
+        return handle_file_failure(
+            run_id=run_id,
+            file_path=file_path.name,
+            depot=depot,
+            batch_id=batch_id,
+            processing_status="encoding failed",
+            stage=stage,
+            error=error,
+            file_start_time=file_start_time,
+        )
 
     except FileNotFoundError as error:
-        status = f"file not found during {stage}"
-        caught_error = error
+        return handle_file_failure(
+            run_id=run_id,
+            file_path=file_path.name,
+            depot=depot,
+            batch_id=batch_id,
+            processing_status=f"file not found during {stage}",
+            stage=stage,
+            error=error,
+            file_start_time=file_start_time,
+        )
 
     except PermissionError as error:
-        status = f"permission denied during {stage}"
-        caught_error = error
+        return handle_file_failure(
+            run_id=run_id,
+            file_path=file_path.name,
+            depot=depot,
+            batch_id=batch_id,
+            processing_status=f"permission denied during {stage}",
+            stage=stage,
+            error=error,
+            file_start_time=file_start_time,
+        )
 
     except KeyError as error:
-        status = f"missing required key in {stage}"
-        caught_error = error
+        return handle_file_failure(
+            run_id=run_id,
+            file_path=file_path.name,
+            depot=depot,
+            batch_id=batch_id,
+            processing_status=f"missing required key in {stage}",
+            stage=stage,
+            error=error,
+            file_start_time=file_start_time,
+        )
 
     except ValueError as error:
-        status = f"invalid value during {stage}"
-        caught_error = error
+        return handle_file_failure(
+            run_id=run_id,
+            file_path=file_path.name,
+            depot=depot,
+            batch_id=batch_id,
+            processing_status=f"invalid value during {stage}",
+            stage=stage,
+            error=error,
+            file_start_time=file_start_time,
+        )
 
     except Exception as error:
-        status = f"unexpected error during {stage}"
-        caught_error = error
+        return handle_file_failure(
+            run_id=run_id,
+            file_path=file_path.name,
+            depot=depot,
+            batch_id=batch_id,
+            processing_status=f"unexpected error during {stage}",
+            stage=stage,
+            error=error,
+            file_start_time=file_start_time,
+        )
 
-    return build_failure_metrics(
-        file_name=file_path.name,
-        depot=depot,
-        batch_id=batch_id,
-        processing_status=status,
-        error=caught_error,
-    )
 
-
-def process_all_files():
+def process_all_files(run_id):
     """
     -> this function process all files starting from the scan module 🔎
     -> addresses all folder errors 📂
@@ -190,11 +299,17 @@ def process_all_files():
 
     try:
         files = scan_folder(INPUT_DIR, FILE_PATTERN)
+        logger.info(
+            "Batch processing started | run_id=%s | total_files=%d",
+            run_id,
+            len(files),
+        )
 
     except FileNotFoundError as error:
         batch_failure = build_failure_metrics(
             file_name="N/A",
             depot="Uknown",
+            batch_id="Uknown",
             processing_status="input folder not found",
             error=error,
         )
@@ -221,9 +336,20 @@ def process_all_files():
         )
         return [batch_failure]
 
-    for file_path in files:
-        file_result = process_one_file(file_path)
+    for position, file_path in enumerate(files, start=1):
+        logger.info(
+            "Batch progress run | run_id=%s | total_files=%d | position=%d | file_name=%s",
+            run_id,
+            len(files),
+            position,
+            file_path.name,
+        )
+        file_result = process_one_file(file_path, run_id)
         file_results.append(file_result)
+
+    logger.info(
+        "Batch process complete | run_id=%s | total_files=%d", run_id, len(files)
+    )
 
     write_output(
         RUN_SUMMARY_DIR / "all_files_summary.csv",

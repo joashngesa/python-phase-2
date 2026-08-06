@@ -16,9 +16,14 @@ expected columns:
     unavailable_vehicle_count
 """
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 
 def get_depot_summary(transformed):
 
+    logger.debug("Depot generation started | transformed_count=%d", len(transformed))
     summary = {}
 
     for van in transformed:
@@ -83,4 +88,11 @@ def get_depot_summary(transformed):
 
         del value["total_engine_temperature_c"]
 
-    return list(summary.values())
+    depot_sum = list(summary.values())
+    logger.info(
+        "Depot generation completed | transformed_count=%d | depot_summary=%d",
+        len(transformed),
+        len(depot_sum),
+    )
+
+    return depot_sum
