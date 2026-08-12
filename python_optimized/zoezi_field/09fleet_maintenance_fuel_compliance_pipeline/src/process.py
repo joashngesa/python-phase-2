@@ -48,8 +48,6 @@ def handle_file_failure(
     file_start_time: float,
 ) -> dict:
 
-    duration = perf_counter - file_start_time
-
     file_result = build_failure_metrics(
         file_name=file_path.name,
         depot=depot,
