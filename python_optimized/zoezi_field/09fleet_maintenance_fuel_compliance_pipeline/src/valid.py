@@ -21,7 +21,9 @@ def get_duplicates_valid(valid_raw):
 
         if key_dups in seen_dups:
             clone = van.copy()
-            clone["error_reasons"] = "inspection_id, vehicle_id + inspection_date"
+            clone["error_reasons"] = (
+                "inspection_id, vehicle_id, inspection_date duplicate"
+            )
             duplicates.append(clone)
 
         else:

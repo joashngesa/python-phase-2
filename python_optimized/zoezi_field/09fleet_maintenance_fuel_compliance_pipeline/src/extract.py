@@ -6,7 +6,7 @@ logger = logging.getLogger(__name__)
 
 def _find_table(json: Any) -> list[dict] | None:
     """
-    -> Recursively searches for an empty list of dictionaries
+    -> Recursively searches for non_empty list of dictionaries
     -> This helper function does not log every failure in inspected
         branch because branch failure does not mean complete extraction failed
     """
