@@ -1,0 +1,7 @@
+purchase_order_id|supplier_id|supplier_name|product_category|quantity_ordered|unit_cost|approved_budget|order_date|expected_delivery_date|delivery_status|priority|processed_at|source_file|error_reasons
+PO-12001|SUP-007|Summit Electrical Supply|Hydraulics|118|56.6|7213.1||2026-07-15|Delayed|High|2026-08-18 13:14:31.786610|procurement_delivery_red_deer_2026_08_12.json|order_date is missing
+PO-12003|SUP-001|Northern Industrial Ltd|Safety|144|71.3|11088.58||2026-07-19|Delivered|Low|2026-08-18 13:14:31.786610|procurement_delivery_red_deer_2026_08_12.json|order_date is missing
+PO-12005|SUP-003|Westline Components|Fasteners|170|86.0|13450.4|2026-07-11|2026-07-01|Delayed|High|2026-08-18 13:14:31.786610|procurement_delivery_red_deer_2026_08_12.json|expected_delivery_date should be after or same day as order_date
+PO-12007|SUP-005|Frontier Safety Products|Hydraulics|196|100.7|21316.18|2026-07-13|2026-07-22|Delivered|Low|2026-08-18 13:14:31.786610|procurement_delivery_red_deer_2026_08_12.json|'delivered' delivery_status should have actual_delivery_date
+PO-12009|SUP-007|Summit Electrical Supply|Safety|42|20.4|925.34|2026-07-10|2026-07-26|Delivered|High|2026-08-18 13:14:31.786610|procurement_delivery_red_deer_2026_08_12.json|actual_delivery_date should be same as or after order_date
+PO-12011|SUP-001|Northern Industrial Ltd|Fasteners|68|35.1|2577.74|2026-07-17||Delivered|Low|2026-08-18 13:14:31.786610|procurement_delivery_red_deer_2026_08_12.json|expected_delivery_date is missing

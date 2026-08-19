@@ -1,4 +1,5 @@
 from src.invalid import get_invalid_valid_raw
+import logging
 
 """
 Duplicate rule:
@@ -6,6 +7,7 @@ Duplicate rule:
     supplier_id
     product_category
 """
+logger = logging.getLogger(__name__)
 
 
 def get_valid_duplicate(valid_raw):
@@ -13,6 +15,8 @@ def get_valid_duplicate(valid_raw):
     valid = []
     duplicates = []
     seen_group = set()
+
+    logger.info("Record screening  & deduplication initiated")
 
     for procure in valid_raw:
 
@@ -31,5 +35,11 @@ def get_valid_duplicate(valid_raw):
         else:
             seen_group.add(group)
             valid.append(procure.copy())
+
+    logger.info(
+        "Record screening  & deduplication completed | valid_count=%d | duplicates_count=%d",
+        len(valid),
+        len(duplicates),
+    )
 
     return valid, duplicates

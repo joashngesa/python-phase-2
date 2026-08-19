@@ -17,6 +17,10 @@ Transformed created values
         fulfillment_rate > 100          +20
 """
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 
 def calc_ordered_value(procure):
 
@@ -108,6 +112,7 @@ def calc_risk_classification(supplier_risk_score):
 
 def transform_data(valid):
 
+    logger.info("Transformation initiated")
     transformed = []
 
     for procure in valid:
@@ -132,7 +137,7 @@ def transform_data(valid):
 
         transformed.append(mutated)
 
-    return [
+    transformed_data = [
         {
             "purchase_order_id": buy.get("purchase_order_id"),
             "supplier_id": buy.get("supplier_id"),
@@ -157,3 +162,9 @@ def transform_data(valid):
         }
         for buy in transformed
     ]
+
+    logger.info(
+        "Transformation completed | transformed_count=%d", len(transformed_data)
+    )
+
+    return transformed_data

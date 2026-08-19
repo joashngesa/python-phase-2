@@ -1,0 +1,22 @@
+purchase_order_id|supplier_id|supplier_name|product_category|quantity_ordered|unit_cost|approved_budget|order_date|expected_delivery_date|delivery_status|priority|processed_at|source_file|error_reasons
+PO-14001|SUP-008|Western Bearings Group|Bearings|55|27.75|1404.15|2026-07-16|2026-07-23|Cancelled|Critical|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14002|SUP-001|Northern Industrial Ltd|Fasteners|68|35.1|2577.74|2026-07-17|2026-07-25|Delivered|Low|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14003|SUP-002|Prairie Mechanical Supply|Pumps|81|42.45|3713.53|2026-07-18|2026-07-27|In Transit|Medium|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14004|SUP-003|Westline Components|Hydraulics|94|49.8|5055.7|2026-07-19|2026-07-28|Delayed|High|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14005|SUP-004|Rocky Mountain Equipment|Electrical|107|57.15|6604.25|2026-07-20|2026-07-28|Cancelled|Critical|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14006|SUP-005|Frontier Safety Products|Safety|120|64.5|7120.8|2026-07-01|2026-07-08|Delivered|Low|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14007|SUP-006|Atlas Fluid Systems|Bearings|133|71.85|10320.53|2026-07-02|2026-07-10|In Transit|Medium|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14008|SUP-007|Summit Electrical Supply|Fasteners|146|79.2|12488.26|2026-07-03|2026-07-12|Delayed|High|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14009|SUP-008|Western Bearings Group|Pumps|159|86.55|14862.37|2026-07-04|2026-07-14|Cancelled|Critical|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14010|SUP-001|Northern Industrial Ltd|Hydraulics|172|93.9|17442.86|2026-07-05|2026-07-16|Delivered|Low|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14011|SUP-002|Prairie Mechanical Supply|Electrical|185|101.25|17232.75|2026-07-06|2026-07-13|In Transit|Medium|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14012|SUP-003|Westline Components|Safety|198|13.6|2908.22|2026-07-07|2026-07-15|Delayed|High|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14013|SUP-004|Rocky Mountain Equipment|Bearings|211|20.95|4774.09|2026-07-08|2026-07-17|Cancelled|Critical|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14014|SUP-005|Frontier Safety Products|Fasteners|44|28.3|1344.82|2026-07-09|2026-07-19|Delivered|Low|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14015|SUP-006|Atlas Fluid Systems|Pumps|57|35.65|2194.61|2026-07-10|2026-07-21|In Transit|Medium|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14016|SUP-007|Summit Electrical Supply|Hydraulics|70|43.0|2769.2|2026-07-11|2026-07-18|Delayed|High|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14017|SUP-008|Western Bearings Group|Electrical|83|50.35|4513.37|2026-07-12|2026-07-20|Cancelled|Critical|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14018|SUP-001|Northern Industrial Ltd|Safety|96|57.7|5982.34|2026-07-13|2026-07-22|Delivered|Low|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14019|SUP-002|Prairie Mechanical Supply|Bearings|109|65.05|7657.69|2026-07-14|2026-07-24|In Transit|Medium|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14020|SUP-003|Westline Components|Fasteners|122|72.4|9539.42|2026-07-15|2026-07-26|Delayed|High|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|
+PO-14021|SUP-004|Rocky Mountain Equipment|Pumps|135|79.75|9904.95|2026-07-16|2026-07-23|Cancelled|Critical|2026-08-18 13:14:31.776690|procurement_delivery_fort_mcmurray_2026_08_12.json|

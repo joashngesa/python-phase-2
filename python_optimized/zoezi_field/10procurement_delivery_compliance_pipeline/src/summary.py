@@ -16,9 +16,14 @@ Columns expected:
     high_risk_order_count
 """
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 
 def summarize_table(transformed):
 
+    logger.info("Table summary initiated")
     summary = {}
 
     for procure in transformed:
@@ -86,5 +91,6 @@ def summarize_table(transformed):
         del buy["delivery_delay_count"]
 
     table_summary = list(summary.values())
+    logger.info("Table summary completed | summary_count=%d", len(table_summary))
 
     return table_summary
