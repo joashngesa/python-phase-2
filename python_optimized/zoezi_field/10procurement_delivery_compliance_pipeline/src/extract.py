@@ -1,47 +1,33 @@
+"""
+Check the json structure of the file. The contract required include:
+    -> batch_id
+    -> depot
+    -> records
+"""
+
 from typing import Any
 import logging
 
 logger = logging.getLogger(__name__)
 
 
-def find_table(file: Any) -> list[dict]:
-    """
-        This module uses the helper function to recursively find non_empty
-    list of dictionaries in the json file. The purpose of the helper
-    function is to avoid logging errors whenever a branch does not have
-    list of dictionaries because lack of it does not necessarily mean
-    that the extraction failed.
-    """
-
-    if isinstance(file, list):
-        if file and all(isinstance(record, dict) for record in file):
-            return file
-
-        return None
-
-    if isinstance(file, dict):
-        for record in file.values():
-            table = find_table(record)
-
-            if table is not None:
-                return table
-
-    return None
-
-
 def extract_table(raw_file: Any) -> list[dict]:
 
     logger.info("File extraction initiated")
 
-    table = find_table(raw_file)
+    if not isinstance(raw_file, dict):
+        logger.error("File is not a dictioanry")
+        raise KeyError("json payload must be dictionary")
 
-    if table is None:
-        logging.warning("Absence of valid table in json payload")
-        raise ValueError("could not find a valid list of dictionary")
+    if raw_file["records"] is None:
+        logger.error("Missing 'record' in the file")
+        raise KeyError("missing 'record' in the file ")
 
-    logger.info("File extraction complete | raw_record_count=%d", len(table))
+    records = raw_file["records"]
 
-    return table
+    logger.info("File extraction completed")
+
+    return records
 
 
 def extract_depot(raw_file: str) -> str:

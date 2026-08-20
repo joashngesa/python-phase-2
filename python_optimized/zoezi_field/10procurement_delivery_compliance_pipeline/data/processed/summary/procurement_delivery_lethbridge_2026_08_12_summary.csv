@@ -1,1 +1,25 @@
 supplier_id|supplier_name|product_category|purchase_order_count|total_quantity_ordered|total_quantity_received|total_ordered_value|total_received_value|average_delivery_delay_days|unfulfilled_order_count|high_risk_order_count
+SUP-004|Rocky Mountain Equipment|Pumps|1|183|183|17083.05|17083.05|0|0|0
+SUP-005|Frontier Safety Products|Hydraulics|1|196|191|19737.2|19233.7|0|1|0
+SUP-006|Atlas Fluid Systems|Electrical|1|209|209|2727.4500000000003|2727.4500000000003|0|0|0
+SUP-007|Summit Electrical Supply|Safety|1|42|42|856.8|856.8|0|0|0
+SUP-008|Western Bearings Group|Bearings|1|55|55|1526.25|1526.25|0|0|0
+SUP-001|Northern Industrial Ltd|Fasteners|1|68|59|2386.8|2070.9|0|1|0
+SUP-002|Prairie Mechanical Supply|Pumps|1|81|81|3438.4500000000003|3438.4500000000003|0|0|0
+SUP-003|Westline Components|Hydraulics|1|94|94|4681.2|4681.2|0|0|0
+SUP-004|Rocky Mountain Equipment|Electrical|1|107|107|6115.05|6115.05|0|0|0
+SUP-005|Frontier Safety Products|Safety|1|120|107|7740.0|6901.5|0|1|0
+SUP-006|Atlas Fluid Systems|Bearings|1|133|133|9556.05|9556.05|0|0|0
+SUP-007|Summit Electrical Supply|Fasteners|1|146|146|11563.2|11563.2|0|0|0
+SUP-008|Western Bearings Group|Pumps|1|159|159|13761.449999999999|13761.449999999999|0|0|0
+SUP-001|Northern Industrial Ltd|Hydraulics|1|172|167|16150.800000000001|15681.300000000001|0|1|0
+SUP-002|Prairie Mechanical Supply|Electrical|1|185|185|18731.25|18731.25|0|0|0
+SUP-003|Westline Components|Safety|1|198|198|2692.7999999999997|2692.7999999999997|0|0|0
+SUP-004|Rocky Mountain Equipment|Bearings|1|211|211|4420.45|4420.45|0|0|0
+SUP-005|Frontier Safety Products|Fasteners|1|44|35|1245.2|990.5|0|1|0
+SUP-006|Atlas Fluid Systems|Pumps|1|57|57|2032.05|2032.05|0|0|0
+SUP-007|Summit Electrical Supply|Hydraulics|1|70|70|3010.0|3010.0|0|0|0
+SUP-008|Western Bearings Group|Electrical|1|83|83|4179.05|4179.05|0|0|0
+SUP-001|Northern Industrial Ltd|Safety|1|96|83|5539.200000000001|4789.1|0|1|0
+SUP-002|Prairie Mechanical Supply|Bearings|1|109|109|7090.45|7090.45|0|0|0
+SUP-003|Westline Components|Fasteners|1|122|122|8832.800000000001|8832.800000000001|0|0|0

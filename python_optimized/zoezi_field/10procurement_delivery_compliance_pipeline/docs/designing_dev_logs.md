@@ -12,3 +12,15 @@ for truthiness
 When designing if statements together with elif statements; always remember python checks conditions from top to bottom
 
 Establish and understand the difference between `value is not` and `value is none or value == "`, and the best scenarios to use one or the other. The main difference is that `if not value` checks for truthiness(evaluating whether a value is consiodered 'falsy' in python), whereas `if value is none or value == "` checks explicitly for missing or blank data types.
+
+## 8-18-2026
+
+The pipeline run but has some output summary issues
+
+the main issues that caused this was not using ( ) after calling `perf_counter()`. This causing a compunding effect.
+
+Using `logging` instead of `logger` when calling logs in modules\
+
+8-19-2026
+
+Rectified the errors in the output files.

@@ -80,7 +80,7 @@ def process_one_file(record_path: str | Path, run_id: str) -> dict:
     file_path = Path(record_path)
     file_start_time = perf_counter()
     depot = "Unknown"
-    batch_id = "Uknown"
+    batch_id = "Unknown"
     stage = "Initialization"
 
     logger.debug(
@@ -110,7 +110,7 @@ def process_one_file(record_path: str | Path, run_id: str) -> dict:
         invalid, valid_raw = get_invalid_valid_raw(converted)
 
         stage = "deduplicate"
-        duplicates, valid = get_valid_duplicate(valid_raw)
+        valid, duplicates = get_valid_duplicate(valid_raw)
 
         stage = "transform"
         transformed = transform_data(valid)
@@ -152,6 +152,7 @@ def process_one_file(record_path: str | Path, run_id: str) -> dict:
             SUMMARY_COLUMNS,
         )
 
+        duration = perf_counter() - file_start_time
         stage = "build_file_metrics"
         file_result = build_success_metrics(
             run_id=run_id,
@@ -174,14 +175,13 @@ def process_one_file(record_path: str | Path, run_id: str) -> dict:
             FILE_METRICS_COLUMNS,
         )
 
-        duration = perf_counter - file_start_time
         logger.info(
             "File processing completed | "
             "run_id=%s | file=%s "
             "raw=%d | valid=%d | "
             "invalid=%d | duplicates=%d | "
             "transformed=%d | summary=%d | "
-            "depot=%d | duration_seconds=%.3f",
+            "depot=%s | duration_seconds=%.3f",
             run_id,
             file_path.name,
             file_result["raw_count"],
@@ -289,6 +289,7 @@ def process_all_files(run_id: str):
 
     except FileNotFoundError as error:
         batch_error = build_failure_metrics(
+            run_id=run_id,
             file_name="N/A",
             batch_id="unknown",
             depot="unknown",
@@ -300,6 +301,7 @@ def process_all_files(run_id: str):
 
     except NotADirectoryError as error:
         batch_error = build_failure_metrics(
+            run_id=run_id,
             file_name="N/A",
             batch_id="unknown",
             depot="unknown",
@@ -311,6 +313,7 @@ def process_all_files(run_id: str):
 
     except PermissionError as error:
         batch_error = build_failure_metrics(
+            run_id=run_id,
             file_name="N/A",
             batch_id="unknown",
             depot="unknown",
@@ -322,6 +325,7 @@ def process_all_files(run_id: str):
 
     except ValueError as error:
         batch_error = build_failure_metrics(
+            run_id=run_id,
             file_name="N/A",
             batch_id="unknown",
             depot="unknown",

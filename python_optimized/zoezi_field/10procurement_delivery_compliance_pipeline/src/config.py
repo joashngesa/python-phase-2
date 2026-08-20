@@ -168,7 +168,7 @@ FILE_METRICS_COLUMNS = [
 PIPELINE_METRICS_COLUMN = [
     "run_id",
     "total_files",
-    "succesfull_files",
+    "succesful_files",
     "failed_files",
     "pipeline_status",
     "total_raw_records",

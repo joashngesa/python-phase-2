@@ -1,6 +1,6 @@
 purchase_order_id|supplier_id|supplier_name|product_category|quantity_ordered|unit_cost|approved_budget|order_date|expected_delivery_date|delivery_status|priority|processed_at|source_file|error_reasons
-PO-11002|SUP-005|Frontier Safety Products|Fasteners|92|41.9|4163.18|2026-07-05|2026-07-16|Delivered|Urgent|2026-08-18 13:14:31.771853|procurement_delivery_edmonton_2026_08_12.json|priority must be one of Low Medium High Critical
-PO-11004|SUP-007|Summit Electrical Supply|Hydraulics|-15|56.6|7213.1|2026-07-07|2026-07-15|Delayed|High|2026-08-18 13:14:31.771853|procurement_delivery_edmonton_2026_08_12.json|quantity_ordered should be >= 0
-PO-11006|SUP-001|Northern Industrial Ltd|Safety|144||11088.58|2026-07-09|2026-07-19|Delivered|Low|2026-08-18 13:14:31.771853|procurement_delivery_edmonton_2026_08_12.json|unit_cost is missing
-PO-11008|SUP-003||Fasteners|170|86.0|13450.4|2026-07-11|2026-07-18|Delayed|High|2026-08-18 13:14:31.771853|procurement_delivery_edmonton_2026_08_12.json|supplier_name is blank
-PO-11016|SUP-003|Westline Components|Hydraulics|94|49.8|5055.7|2026-07-19|2026-07-28|Pending|High|2026-08-18 13:14:31.771853|procurement_delivery_edmonton_2026_08_12.json|delivery_status should be in the delivery status list
+PO-11002|SUP-005|Frontier Safety Products|Fasteners|92|41.9|4163.18|2026-07-05|2026-07-16|Delivered|Urgent|2026-08-20 08:40:25.651124|procurement_delivery_edmonton_2026_08_12.json|priority must be one of Low Medium High Critical
+PO-11004|SUP-007|Summit Electrical Supply|Hydraulics|-15|56.6|7213.1|2026-07-07|2026-07-15|Delayed|High|2026-08-20 08:40:25.651124|procurement_delivery_edmonton_2026_08_12.json|quantity_ordered should be >= 0
+PO-11006|SUP-001|Northern Industrial Ltd|Safety|144||11088.58|2026-07-09|2026-07-19|Delivered|Low|2026-08-20 08:40:25.651124|procurement_delivery_edmonton_2026_08_12.json|unit_cost is missing
+PO-11008|SUP-003||Fasteners|170|86.0|13450.4|2026-07-11|2026-07-18|Delayed|High|2026-08-20 08:40:25.651124|procurement_delivery_edmonton_2026_08_12.json|supplier_name is blank
+PO-11016|SUP-003|Westline Components|Hydraulics|94|49.8|5055.7|2026-07-19|2026-07-28|Pending|High|2026-08-20 08:40:25.651124|procurement_delivery_edmonton_2026_08_12.json|delivery_status should be in the delivery status list

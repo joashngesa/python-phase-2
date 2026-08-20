@@ -12,7 +12,7 @@ However, each project or pipeline has its own project pipeline set up.
 * [X] intro to error handling & metadata extraction
 * [X] directory scanning
 * [X] batch file processing
-* [ ] logging & observability basics
+* [X] logging & observability basics
 * [ ] error resilient scripts
 * [ ] command line python execution
 * [ ] intro to pandas

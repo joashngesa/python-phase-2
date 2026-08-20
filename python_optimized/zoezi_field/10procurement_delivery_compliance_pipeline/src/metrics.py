@@ -9,19 +9,21 @@ def pipeline_summary(file_results: list[dict], run_id: str) -> dict:
         "completed with invalid & duplicates",
         "completed with invalid records",
         "completed with duplicate records",
-        "completed with duplicate records",
         "success",
     ]
 
-    succesfull_files = (
+    succesfull_files = sum(
         1 for result in file_results if result["processing_status"] in success_status
     )
     failed_files = total_files - succesfull_files
 
-    if succesfull_files == total_files and failed_files == 0:
+    if total_files == 0:
+        pipeline_status = "FAILED"
+
+    elif succesfull_files == total_files:
         pipeline_status = "SUCCESS"
 
-    elif succesfull_files > 0 and failed_files > 0:
+    elif succesfull_files > 0:
         pipeline_status = "PARTIAL_SUCCESS"
 
     else:
@@ -43,7 +45,7 @@ def pipeline_summary(file_results: list[dict], run_id: str) -> dict:
     return {
         "run_id": run_id,
         "total_files": total_files,
-        "succesfull_files": succesfull_files,
+        "succesful_files": succesfull_files,
         "failed_files": failed_files,
         "pipeline_status": pipeline_status,
         "total_raw_records": total_raw_records,

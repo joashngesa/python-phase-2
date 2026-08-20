@@ -11,3 +11,22 @@ When calculating `risk score`, the module considered cases where the `fulfillmen
 ## Summary module
 
 The column `over_budget_order_count` was changed to `unfulfilled_order_count`, the name over budget count insinuates that the budget was more than needed whereas the value of the column shows the orders that were unfulfilled(positive budget variance)
+
+## Output summary
+
+`ERROR`:There is an error in the pipeline, all_files summary is not working as expected, a solution is needed. the file metrics also have wrong files count.
+
+`CORRECTION`:in the valid module, the order of the return was valid, duplicates but in the process module, i previously changed the order when assigning the values valid, duplicates in the function. The order should be the same in the module and the process module.
+
+`IMPROVEMENT OPPORTUNITIES` : The file metrics should include failed stage and duration seconds
+
+## Pipeline structure correction
+
+### Improvement in structure validation
+
+Initially the pipeline was was merely obtaining iterable records, as opposed to using an explicit contract which includes:
+
+1. batch_id
+2. depot
+3. generated_at
+4. records(table that undergoes pipeline process)

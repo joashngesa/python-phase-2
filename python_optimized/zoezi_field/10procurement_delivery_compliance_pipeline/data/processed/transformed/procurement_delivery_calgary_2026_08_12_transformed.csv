@@ -1,1 +1,25 @@
 purchase_order_id|supplier_id|supplier_name|product_category|quantity_ordered|quantity_received|unit_cost|approved_budget|order_date|expected_delivery_date|actual_delivery_date|delivery_status|priority|ordered_value|received_value|budget_variance|delivery_delay|fulfillment_rate|supplier_risk_score|risk_classification
+PO-10001|SUP-001|Northern Industrial Ltd|Hydraulics|40|35|12.5|460.0|2026-07-01|2026-07-08|2026-07-08|Delivered|Low|500.0|437.5|62.5|0|87.5|15|Low
+PO-10002|SUP-002|Prairie Mechanical Supply|Electrical|53|53|19.85|1136.21|2026-07-02|2026-07-10||In Transit|Medium|1052.0500000000002|1052.0500000000002|0.0|0|100.0|0|None
+PO-10003|SUP-003|Westline Components|Safety|66|66|27.2|1938.82|2026-07-03|2026-07-12|2026-07-20|Delivered|High|1795.2|1795.2|0.0|8|100.0|30|Medium
+PO-10004|SUP-004|Rocky Mountain Equipment|Bearings|79|79|34.55|2947.81|2026-07-04|2026-07-14||Cancelled|Critical|2729.45|2729.45|0.0|0|100.0|0|None
+PO-10005|SUP-005|Frontier Safety Products|Fasteners|92|83|41.9|4163.18|2026-07-05|2026-07-16|2026-07-16|Delivered|Low|3854.7999999999997|3477.7|377.0999999999999|0|90.22|15|Low
+PO-10006|SUP-006|Atlas Fluid Systems|Pumps|105|105|49.25|4757.55|2026-07-06|2026-07-13||In Transit|Medium|5171.25|5171.25|0.0|0|100.0|0|None
+PO-10007|SUP-007|Summit Electrical Supply|Hydraulics|118|118|56.6|7213.1|2026-07-07|2026-07-15||Delayed|High|6678.8|6678.8|0.0|0|100.0|0|None
+PO-10008|SUP-008|Western Bearings Group|Electrical|131|111|63.95|9047.65|2026-07-08|2026-07-17||Cancelled|Critical|8377.45|7098.450000000001|1279.0|0|84.73|15|Low
+PO-10009|SUP-001|Northern Industrial Ltd|Safety|144|131|71.3|11088.58|2026-07-09|2026-07-19|2026-07-19|Delivered|Low|10267.199999999999|9340.3|926.8999999999996|0|90.97|15|Low
+PO-10010|SUP-002|Prairie Mechanical Supply|Bearings|157|157|78.65|9261.04|2026-07-10|2026-07-21||In Transit|Medium|12348.050000000001|12348.050000000001|0.0|0|100.0|0|None
+PO-10011|SUP-003|Westline Components|Fasteners|170|170|86.0|13450.4|2026-07-11|2026-07-18||Delayed|High|14620.0|14620.0|0.0|0|100.0|0|None
+PO-10012|SUP-004|Rocky Mountain Equipment|Pumps|183|183|93.35|18449.69|2026-07-12|2026-07-20||Cancelled|Critical|17083.05|17083.05|0.0|0|100.0|0|None
+PO-10013|SUP-005|Frontier Safety Products|Hydraulics|196|191|100.7|21316.18|2026-07-13|2026-07-22|2026-07-22|Delivered|Low|19737.2|19233.7|503.5|0|97.45|0|None
+PO-10014|SUP-006|Atlas Fluid Systems|Electrical|209|209|13.05|2945.65|2026-07-14|2026-07-24||In Transit|Medium|2727.4500000000003|2727.4500000000003|0.0|0|100.0|0|None
+PO-10015|SUP-007|Summit Electrical Supply|Safety|42|42|20.4|925.34|2026-07-15|2026-07-26||Delayed|High|856.8|856.8|0.0|0|100.0|0|None
+PO-10016|SUP-008|Western Bearings Group|Bearings|55|55|27.75|1404.15|2026-07-16|2026-07-23||Cancelled|Critical|1526.25|1526.25|0.0|0|100.0|0|None
+PO-10017|SUP-001|Northern Industrial Ltd|Fasteners|68|59|35.1|2577.74|2026-07-17|2026-07-25|2026-07-25|Delivered|Low|2386.8|2070.9|315.9000000000001|0|86.76|15|Low
+PO-10018|SUP-002|Prairie Mechanical Supply|Pumps|81|81|42.45|3713.53|2026-07-18|2026-07-27||In Transit|Medium|3438.4500000000003|3438.4500000000003|0.0|0|100.0|0|None
+PO-10019|SUP-003|Westline Components|Hydraulics|94|94|49.8|5055.7|2026-07-19|2026-07-28||Delayed|High|4681.2|4681.2|0.0|0|100.0|0|None
+PO-10020|SUP-004|Rocky Mountain Equipment|Electrical|107|107|57.15|6604.25|2026-07-20|2026-07-28||Cancelled|Critical|6115.05|6115.05|0.0|0|100.0|0|None
+PO-10021|SUP-005|Frontier Safety Products|Safety|120|107|64.5|7120.8|2026-07-01|2026-07-08|2026-07-08|Delivered|Low|7740.0|6901.5|838.5|0|89.17|15|Low
+PO-10022|SUP-006|Atlas Fluid Systems|Bearings|133|133|71.85|10320.53|2026-07-02|2026-07-10||In Transit|Medium|9556.05|9556.05|0.0|0|100.0|0|None
+PO-10023|SUP-007|Summit Electrical Supply|Fasteners|146|146|79.2|12488.26|2026-07-03|2026-07-12||Delayed|High|11563.2|11563.2|0.0|0|100.0|0|None
+PO-10024|SUP-008|Western Bearings Group|Pumps|159|159|86.55|14862.37|2026-07-04|2026-07-14||Cancelled|Critical|13761.449999999999|13761.449999999999|0.0|0|100.0|0|None

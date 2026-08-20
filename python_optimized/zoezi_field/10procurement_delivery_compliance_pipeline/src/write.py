@@ -28,7 +28,7 @@ def write_output(output_path, data, output_delimiter, output_column):
         write.writerows(data)
 
     logger.info(
-        "Output writing initiated | path=%s | file=%s | file_count=%d",
+        "Output writing completed | path=%s | file=%s | file_count=%d",
         file_path,
         file_path.name,
         len(data),

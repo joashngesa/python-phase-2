@@ -11,3 +11,13 @@ the all_files_summary file has an error, debugging needed.
 ## Duration variable
 
 *TypeError: unsupported operand type for -: 'builtin_function_or_method' and 'float'*   error in the log file.
+
+## Run summary file
+
+THe file was not written in the selected output. The pipeline metrics did not work as expected.
+
+## Solution
+
+When using the perf_counter method, i excluded (), the correction is to include it.
+
+Make sire that the module order of table returns are used the same way they are used in the process module.

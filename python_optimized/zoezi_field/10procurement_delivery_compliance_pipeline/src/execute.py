@@ -18,14 +18,14 @@ logger = logging.getLogger(__name__)
 
 def execute_procurement_delivery_compliance_pipeline(run_id: str):
 
-    logging.info(
-        "Pipeline processing initiated | pipeline_name | run_id",
+    logger.info(
+        "Pipeline processing initiated | pipeline_name=%s | run_id=%s",
         PIPELINE_NAME,
         run_id,
     )
 
     file_results = process_all_files(run_id)
-    pipeline_metrics = pipeline_summary(file_results)
+    pipeline_metrics = pipeline_summary(file_results, run_id)
 
     write_output(
         RUN_SUMMARY_DIR / "run_summary.csv",
@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
         pipeline_metrics = execute_procurement_delivery_compliance_pipeline(run_id)
 
-        logging.info(
+        logger.info(
             "Pipeline processing completed | pipeline_name=%s | run_id=%s | status=%s",
             PIPELINE_NAME,
             run_id,
@@ -54,7 +54,7 @@ if __name__ == "__main__":
         )
 
     except Exception:
-        logging.exception(
+        logger.exception(
             "unhandled pipeline failure | pipeline_name=%s | run_id=%s",
             PIPELINE_NAME,
             run_id,

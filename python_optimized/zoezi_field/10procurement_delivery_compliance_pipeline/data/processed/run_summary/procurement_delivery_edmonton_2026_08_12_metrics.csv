@@ -1,2 +1,2 @@
 run_id|file_name|batch_id|depot|processing_status|raw_count|valid_count|invalid_count|duplicate_count|transformed_count|summary_count|error_type|error_message
-procure_20260818T191431Z|procurement_delivery_edmonton_2026_08_12.json|PROC-EDMONTON-20260812-001|Edmonton|completed with invalid & duplicates|24|2|5|17|2|2||
+procure_20260820T144025Z|procurement_delivery_edmonton_2026_08_12.json|PROC-EDMONTON-20260812-001|Edmonton|completed with invalid & duplicates|24|17|5|2|17|17||
