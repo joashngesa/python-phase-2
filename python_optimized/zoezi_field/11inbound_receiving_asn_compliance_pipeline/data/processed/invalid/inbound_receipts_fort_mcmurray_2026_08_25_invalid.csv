@@ -1,0 +1,4 @@
+receipt_id|purchase_order_id|asn_id|supplier_id|supplier_name|warehouse|sku|ordered_qty|shipped_qty|received_qty|damaged_qty|unit_cost|order_date|promised_delivery_date|ship_date|receipt_date|receipt_status|carrier|dock_door|notes|error_reasons
+RCV-WH-YMM-012|PO-202608-1412|ASN-WH-YMM-2012|SUP-102|Northern Components Ltd|Fort Mcmurray|SKU-1004|30|35|35|0|18.9|2026-08-03||2026-08-04|2026-08-10|Partial|TransWest Logistics|D-01||promised_delivery_date is missing
+RCV-WH-YMM-015|PO-202608-1415|ASN-WH-YMM-2015|SUP-105|  |Fort Mcmurray|SKU-1007|120|120|120|0|12.25|2026-08-06|2026-08-13|2026-08-08|2026-08-14|Partial|NorthLine Freight|D-07|Pallet wrap damaged|supplier_name is blank
+RCV-WH-YMM-021|PO-202608-1421|ASN-WH-YMM-2021|SUP-101|Prairie Industrial Supply|Fort Mcmurray|SKU-1005|40|40|40|0|18.9|2026-08-04|2026-08-07|2026-08-07||Received|TransWest Logistics|D-08||receipt_date required when receipt_status is received

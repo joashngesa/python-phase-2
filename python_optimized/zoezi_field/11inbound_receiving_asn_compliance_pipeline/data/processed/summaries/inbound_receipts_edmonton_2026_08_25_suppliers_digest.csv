@@ -1,0 +1,6 @@
+supplier_id|supplier_name|receipt_count|tot_ordered_qty|tot_received_qty|tot_ordered_value|tot_received_value|tot_damaged_qty|average_fill_rate_pct|damage_rate_pct|late_receipt_count|compliant_receipt_count
+SUP-102|Northern Components Ltd|4|300|289|6739.5|6730.8|2|96.33|0.69|0|0
+SUP-103|Rocky Mountain Packaging|3|110|115|4014.5|4456.5|2|104.55|1.74|1|1
+SUP-105|Aurora Equipment Parts|2|60|57|1317.0|1260.3|2|95.0|3.51|0|0
+SUP-101|Prairie Industrial Supply|3|195|194|4830.5|4770.5|3|99.49|1.55|1|0
+SUP-104|Westline Safety Products|3|220|217|4287.5|4159.25|3|98.64|1.38|1|0

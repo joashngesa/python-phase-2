@@ -1,6 +1,12 @@
+import logging
+
+logger = logging.getLogger(__name__)
+
+
 def supplier_summary(transformed):
 
     summary = {}
+    logger.info("Supplier summary initiated")
 
     for procure in transformed:
 
@@ -68,4 +74,7 @@ def supplier_summary(transformed):
 
     suppliers_tbl = list(summary.values())
 
+    logger.info(
+        "Supplier summary completed | supplier_digest_count=%d", len(suppliers_tbl)
+    )
     return suppliers_tbl

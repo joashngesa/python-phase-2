@@ -1,7 +1,13 @@
+import logging
+
+logger = logging.getLogger(__name__)
+
+
 def get_duplicates(valid):
 
     duplicates = []
     seen_id = set()
+    logger.info("Duplicate detection initiated")
 
     for procure in valid:
 
@@ -14,5 +20,7 @@ def get_duplicates(valid):
 
         else:
             seen_id.add(receipt_id)
+
+    logger.info("Duplicate detection completed | duplicates_count=%d", len(duplicates))
 
     return duplicates

@@ -1,3 +1,8 @@
+import logging
+
+logger = logging.getLogger(__name__)
+
+
 def calc_ordered_value(procure):
 
     ordered_qty = procure.get("ordered_qty")
@@ -121,6 +126,7 @@ def calc_compliance_status(delivery_performance, received_performance):
 def transform_data(valid):
 
     transformed = []
+    logger.info("Transformation initiated")
 
     for procure in valid:
 
@@ -150,5 +156,7 @@ def transform_data(valid):
         buy["compliance_status"] = compliance_status
 
         transformed.append(buy)
+
+    logger.info("Transformation completed | transformed_count=%d", len(transformed))
 
     return transformed

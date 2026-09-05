@@ -1,4 +1,7 @@
 from datetime import datetime, date
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def add_error(field, message):
@@ -33,6 +36,8 @@ def convert_data(raw_file):
 
     converted = []
     conversion_error_count = 0
+
+    logger.debug("Conversion initiated | raw_record_count=%d", len(raw_file))
 
     for procure in raw_file:
 
@@ -161,5 +166,9 @@ def convert_data(raw_file):
             conversion_error_count += 1
 
         converted.append(buy)
+
+    logger.info(
+        "Conversion completed | conversion_error_count=%d", conversion_error_count
+    )
 
     return converted

@@ -1,0 +1,2 @@
+receipt_id|purchase_order_id|asn_id|supplier_id|supplier_name|warehouse|sku|ordered_qty|shipped_qty|received_qty|damaged_qty|unit_cost|order_date|promised_delivery_date|ship_date|receipt_date|receipt_status|carrier|dock_door|notes|duplicates
+RCV-WH-CGY-013|PO-202608-1014|ASN-WH-CGY-2014|SUP-104|Westline Safety Products|Calgary|SKU-1006|50|55|55|1|25.0|2026-08-07|2026-08-14|2026-08-09|2026-08-14|Received|Arctic Route Transport|D-05|Count verified|duplicate receipt_id

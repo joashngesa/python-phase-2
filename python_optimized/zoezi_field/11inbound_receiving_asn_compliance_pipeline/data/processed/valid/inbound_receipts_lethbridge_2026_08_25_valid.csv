@@ -1,0 +1,18 @@
+receipt_id|purchase_order_id|asn_id|supplier_id|supplier_name|warehouse|sku|ordered_qty|shipped_qty|received_qty|damaged_qty|unit_cost|order_date|promised_delivery_date|ship_date|receipt_date|receipt_status|carrier|dock_door|notes
+RCV-WH-YQL-001|PO-202608-1301|ASN-WH-YQL-2001|SUP-101|Prairie Industrial Supply|Lethbridge|SKU-1001|40|45|42|1|18.9|2026-08-01|2026-08-05|2026-08-04|2026-08-05|Rejected|TransWest Logistics|D-01|
+RCV-WH-YQL-003|PO-202608-1303|ASN-WH-YQL-2003|SUP-103|Rocky Mountain Packaging|Lethbridge|SKU-1003|50|45|45|2|88.4|2026-08-01|2026-08-08|2026-08-03|2026-08-07|Partial|TransWest Logistics|D-04|Seal intact
+RCV-WH-YQL-004|PO-202608-1304|ASN-WH-YQL-2004|SUP-104|Westline Safety Products|Lethbridge|SKU-1004|20|20|20|1|88.4|2026-08-06|2026-08-11|2026-08-08|2026-08-10|Received|TransWest Logistics|D-06|Late carrier arrival
+RCV-WH-YQL-005|PO-202608-1305|ASN-WH-YQL-2005|SUP-105|Aurora Equipment Parts|Lethbridge|SKU-1005|20|20|17|2|25.0|2026-08-08|2026-08-14|2026-08-10|2026-08-16|Partial||D-01|Count verified
+RCV-WH-YQL-006|PO-202608-1306|ASN-WH-YQL-2006|SUP-101|Prairie Industrial Supply|Lethbridge|SKU-1006|120|125|125|0|12.25|2026-08-06|2026-08-12|2026-08-07|2026-08-13|Received|Arctic Route Transport|D-03|
+RCV-WH-YQL-007|PO-202608-1307|ASN-WH-YQL-2007|SUP-102|Northern Components Ltd|Lethbridge|SKU-1007|40|40|37|1|88.4|2026-08-02|2026-08-08|2026-08-04|2026-08-07|Received|Prairie Haul|D-05|Count verified
+RCV-WH-YQL-009|PO-202608-1309|ASN-WH-YQL-2009|SUP-104|Westline Safety Products|Lethbridge|SKU-1001|30|30|30|0|88.4|2026-08-08|2026-08-12|2026-08-11|2026-08-13|Received|Prairie Haul|D-08|Pallet wrap damaged
+RCV-WH-YQL-010|PO-202608-1310|ASN-WH-YQL-2010|SUP-105|Aurora Equipment Parts|Lethbridge|SKU-1002|30|30|27|0|42.75|2026-08-06|2026-08-11|2026-08-09|2026-08-11|Received|NorthLine Freight|D-03|Count verified
+RCV-WH-YQL-012|PO-202608-1312|ASN-WH-YQL-2012|SUP-102|Northern Components Ltd|Lethbridge|SKU-1004|40|35|35|0|7.5|2026-08-01|2026-08-06|2026-08-02|2026-08-05|Rejected|Prairie Haul|D-03|Count verified
+RCV-WH-YQL-013|PO-202608-1313|ASN-WH-YQL-2013|SUP-103|Rocky Mountain Packaging|Lethbridge|SKU-1005|100|100|100|0|12.25|2026-08-02|2026-08-09|2026-08-03|2026-08-08|Received|TransWest Logistics|D-01|Count verified
+RCV-WH-YQL-015|PO-202608-1315|ASN-WH-YQL-2015|SUP-105|Aurora Equipment Parts|Lethbridge|SKU-1007|40|40|40|1|7.5|2026-08-06|2026-08-13|2026-08-09|2026-08-14|Received|Arctic Route Transport|D-02|
+RCV-WH-YQL-016|PO-202608-1316|ASN-WH-YQL-2016|SUP-101|Prairie Industrial Supply|Lethbridge|SKU-1008|20|25|22|0|12.25|2026-08-02|2026-08-08|2026-08-05|2026-08-09|Received|Prairie Haul|D-04|Count verified
+RCV-WH-YQL-017|PO-202608-1317|ASN-WH-YQL-2017|SUP-102|Northern Components Ltd|Calgary|SKU-1001|40|40|40|1|18.9|2026-08-05|2026-08-08|2026-08-07|2026-08-10|Rejected|Arctic Route Transport|D-04|Seal intact
+RCV-WH-YQL-018|PO-202608-1318|ASN-WH-YQL-2018|SUP-103|Rocky Mountain Packaging|Lethbridge|SKU-1002|30|30|30|0|42.75|2026-08-01|2026-08-04|2026-08-03|2026-08-03|Rejected|Prairie Haul|D-02|Count verified
+RCV-WH-YQL-019|PO-202608-1319|ASN-WH-YQL-2019|SUP-104|Westline Safety Products|Lethbridge|SKU-1003|50|45|45|2|25.0|2026-08-05|2026-08-09|2026-08-07|2026-08-09|Received|Arctic Route Transport|D-07|Late carrier arrival
+RCV-WH-YQL-020|PO-202608-1320|ASN-WH-YQL-2020|SUP-105|Aurora Equipment Parts|Lethbridge|SKU-1004|30|30|30|2|7.5|2026-08-05|2026-08-12|2026-08-08|2026-08-12|Received|NorthLine Freight|D-01|Late carrier arrival
+RCV-WH-YQL-021|PO-202608-1321|ASN-WH-YQL-2021|SUP-101|Prairie Industrial Supply|Lethbridge|SKU-1005|40|40|40|1|7.5|2026-08-01|2026-08-07|2026-08-03|2026-08-07|Received|NorthLine Freight|D-01|Pallet wrap damaged

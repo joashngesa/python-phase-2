@@ -1,0 +1,20 @@
+receipt_id|purchase_order_id|asn_id|supplier_id|supplier_name|warehouse|sku|ordered_qty|shipped_qty|received_qty|damaged_qty|unit_cost|order_date|promised_delivery_date|ship_date|receipt_date|receipt_status|carrier|dock_door|notes
+RCV-WH-YMM-001|PO-202608-1401|ASN-WH-YMM-2001|SUP-101|Prairie Industrial Supply|Fort Mcmurray|SKU-1001|40|40|40|1|25.0|2026-08-03|2026-08-08|2026-08-05|2026-08-07|Received|NorthLine Freight|D-08|Pallet wrap damaged
+RCV-WH-YMM-002|PO-202608-1402|ASN-WH-YMM-2002|SUP-102|Northern Components Ltd|Fort Mcmurray|SKU-1002|30|30|30|2|12.25|2026-08-02|2026-08-08|2026-08-03|2026-08-07|Partial|Prairie Haul|D-07|Seal intact
+RCV-WH-YMM-003|PO-202608-1403|ASN-WH-YMM-2003|SUP-103|Rocky Mountain Packaging|Fort Mcmurray|SKU-1003|120|120|120|2|18.9|2026-08-08|2026-08-12|2026-08-11|2026-08-14|Rejected|Arctic Route Transport|D-03|Seal intact
+RCV-WH-YMM-004|PO-202608-1404|ASN-WH-YMM-2004|SUP-104|Westline Safety Products|Fort Mcmurray|SKU-1004|120|120|120|0|88.4|2026-08-07|2026-08-13|2026-08-08|2026-08-13|Rejected|NorthLine Freight|D-08|Count verified
+RCV-WH-YMM-005|PO-202608-1405|ASN-WH-YMM-2005|SUP-105|Aurora Equipment Parts|Fort Mcmurray|SKU-1005|120|115|115|0|18.9|2026-08-05|2026-08-11|2026-08-06|2026-08-11|Received|NorthLine Freight|D-07|Pallet wrap damaged
+RCV-WH-YMM-006|PO-202608-1406|ASN-WH-YMM-2006|SUP-101|Prairie Industrial Supply|Fort Mcmurray|SKU-1006|40|45|0|0|42.75|2026-08-01|2026-08-07|2026-08-03|2026-08-07|Received|NorthLine Freight|D-08|
+RCV-WH-YMM-007|PO-202608-1407|ASN-WH-YMM-2007|SUP-102|Northern Components Ltd|Fort Mcmurray|SKU-1007|20|15|15|0|18.9|2026-08-05|2026-08-11|2026-08-08|2026-08-11|Partial|NorthLine Freight|D-06|
+RCV-WH-YMM-008|PO-202608-1408|ASN-WH-YMM-2008|SUP-103|Rocky Mountain Packaging|Fort Mcmurray|SKU-1008|20|20|20|2|25.0|2026-08-01|2026-08-07|2026-08-03|2026-08-09|Partial|Prairie Haul|D-01|Late carrier arrival
+RCV-WH-YMM-009|PO-202608-1409|ASN-WH-YMM-2009|SUP-104|Westline Safety Products|Fort Mcmurray|SKU-1001|20|20|20|5|4.75|2026-08-02|2026-08-06|2026-08-03|2026-08-06|Received|TransWest Logistics|D-01|Pallet wrap damaged
+RCV-WH-YMM-010|PO-202608-1410|ASN-WH-YMM-2010|SUP-105|Aurora Equipment Parts|Fort Mcmurray|SKU-1002|100|100|100|1|88.4|2026-08-07|2026-08-12|2026-08-08|2026-08-13|Partial|Arctic Route Transport|D-03|Seal intact
+RCV-WH-YMM-011|PO-202608-1411|ASN-WH-YMM-2011|SUP-101|Prairie Industrial Supply|Fort Mcmurray|SKU-1003|50|45|45|0|88.4|2026-08-02|2026-08-05|2026-08-03|2026-08-06|Partial|Prairie Haul|D-06|Seal intact
+RCV-WH-YMM-013|PO-202608-1413|ASN-WH-YMM-2013|SUP-103|Rocky Mountain Packaging|Fort Mcmurray|SKU-1005|20|25|25|0|42.75|2026-08-06|2026-08-10|2026-08-08|2026-08-12|Received|Prairie Haul|D-06|
+RCV-WH-YMM-014|PO-202608-1414|ASN-WH-YMM-2014|SUP-104|Westline Safety Products|Fort Mcmurray|SKU-1006|75|75|72|2|12.25|2026-08-08|2026-08-15|2026-08-10|2026-08-16|Received|Arctic Route Transport|D-04|Count verified
+RCV-WH-YMM-016|PO-202608-1416|ASN-WH-YMM-2016|SUP-101|Prairie Industrial Supply|Fort Mcmurray|SKU-1008|30|30|27|2|18.9|2026-08-05|2026-08-11|2026-08-07|2026-08-12|Partial|NorthLine Freight|D-07|Seal intact
+RCV-WH-YMM-017|PO-202608-1417|ASN-WH-YMM-2017|SUP-102|Northern Components Ltd|Fort Mcmurray|SKU-1001|30|25|25|0|25.0|2026-08-06|2026-08-09|2026-08-08|2026-08-11|Received|Prairie Haul|D-04|Pallet wrap damaged
+RCV-WH-YMM-018|PO-202608-1418|ASN-WH-YMM-2018|SUP-103|Rocky Mountain Packaging|Fort Mcmurray|SKU-1002|100|105|105|2|88.4|2026-08-03|2026-08-07|2026-08-04|2026-08-06|Received|Prairie Haul||Seal intact
+RCV-WH-YMM-019|PO-202608-1419|ASN-WH-YMM-2019|SUP-104|Westline Safety Products|Fort Mcmurray|SKU-1003|40|40|37|0|88.4|2026-08-04|2026-08-09|2026-08-06|2026-08-09|Received|NorthLine Freight|D-02|Late carrier arrival
+RCV-WH-YMM-020|PO-202608-1420|ASN-WH-YMM-2020|SUP-105|Aurora Equipment Parts|Fort Mcmurray|SKU-1004|100|100|100|1|88.4|2026-08-07|2026-08-13|2026-08-08|2026-08-13|Received|NorthLine Freight|D-06|
+RCV-WH-YMM-022|PO-202608-1422|ASN-WH-YMM-2022|SUP-102|Northern Components Ltd|Fort Mcmurray|SKU-1006|40|40|40|1|25.0|2026-08-03|2026-08-08|2026-08-06|2026-08-08|Partial|NorthLine Freight|D-08|Late carrier arrival

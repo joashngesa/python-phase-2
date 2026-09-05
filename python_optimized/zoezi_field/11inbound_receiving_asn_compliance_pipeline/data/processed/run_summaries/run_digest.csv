@@ -1,0 +1,2 @@
+run_id|total_files|succesful_files|failed_files|pipeline_status|total_raw_records|total_valid_records|total_invalid_records|total_duplicates_records|total_transformed_records|total_summary_count
+inbound_20260905T050036Z|7||2|PARTIAL SUCCESS|110|84|26|2|84|

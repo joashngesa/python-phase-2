@@ -1,4 +1,4 @@
-# INBOUND RECEIVING ASN COMPLIANCE PIPELINE.
+# INBOUND RECEIVING ASN COMPLIANCE PIPELINE
 
 ## Pipeline Task
 
@@ -45,13 +45,27 @@ EACH ITEM IN LIST
 3. Convert file from `read`
 4. create helper function `validation.py` for validation
 5. Get `invalid` & `valid`from `converted` module
+6. Get `duplicates` from valid file
+7. Get `transformed` table from valid
+8. Get `supplier_summary` table from `transformed` file
+9. Get `warehouse_digest` table from `transformed`
+10. Code `write_output` file for the files output
 
 ## Supporting modules
 
 1. `.env.config` module that holds paths & environment variables.
 2. `config.py` module that holds the pipeline configurations.
 3. `log_config.py` module that configures the logging in the pipeline.
-4.
+
+## Pipeline metadata modules
+
+1. `result.py` that collects metrics for each file in the pipeline
+2. `metrics.py` collects collective metrics for all the files in the pipeline
+
+## Orchestrating modules
+
+1. `process.py`
+2. `execute.py`
 
 ## Validation contract & business relationships
 

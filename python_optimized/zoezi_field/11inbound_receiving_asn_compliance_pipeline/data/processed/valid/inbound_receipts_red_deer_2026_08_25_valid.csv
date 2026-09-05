@@ -1,0 +1,17 @@
+receipt_id|purchase_order_id|asn_id|supplier_id|supplier_name|warehouse|sku|ordered_qty|shipped_qty|received_qty|damaged_qty|unit_cost|order_date|promised_delivery_date|ship_date|receipt_date|receipt_status|carrier|dock_door|notes
+RCV-WH-YQF-001|PO-202608-1201|ASN-WH-YQF-2001|SUP-101|Prairie Industrial Supply|Red Deer|SKU-1001|30|30|30|1|18.9|2026-08-02|2026-08-09|2026-08-03|2026-08-10|Received|NorthLine Freight|D-02|Count verified
+RCV-WH-YQF-002|PO-202608-1202|ASN-WH-YQF-2002|SUP-102|Northern Components Ltd|Red Deer|SKU-1002|30|30|30|1|4.75|2026-08-08|2026-08-14|2026-08-10|2026-08-13|Received|Arctic Route Transport|D-03|Late carrier arrival
+RCV-WH-YQF-004|PO-202608-1204|ASN-WH-YQF-2004|SUP-104|Westline Safety Products|Red Deer|SKU-1004|75|75|75|2|4.75|2026-08-09|2026-08-12|2026-08-11|2026-08-12|Received|TransWest Logistics|D-07|Count verified
+RCV-WH-YQF-005|PO-202608-1205|ASN-WH-YQF-2005|SUP-105|Aurora Equipment Parts|Red Deer|SKU-1005|40|40|40|0|88.4|2026-08-05|2026-08-10|2026-08-06|2026-08-09|Partial|Prairie Haul|D-07|Pallet wrap damaged
+RCV-WH-YQF-007|PO-202608-1207|ASN-WH-YQF-2007|SUP-102|Northern Components Ltd|Red Deer|SKU-1007|30|30|30|0|88.4|2026-08-01|2026-08-04|2026-08-04|2026-08-05|Rejected|Prairie Haul|D-03|Seal intact
+RCV-WH-YQF-008|PO-202608-1208|ASN-WH-YQF-2008|SUP-103|Rocky Mountain Packaging|Red Deer|SKU-1008|75|80|80|2|25.0|2026-08-08|2026-08-12|2026-08-11|2026-08-11|Received|Arctic Route Transport|D-08|Seal intact
+RCV-WH-YQF-010|PO-202608-1210|ASN-WH-YQF-2010|SUP-105|Aurora Equipment Parts|Red Deer|SKU-1002|40|45|45|1|18.9|2026-08-05|2026-08-11|2026-08-07|2026-08-12|Rejected|NorthLine Freight|D-08|Count verified
+RCV-WH-YQF-011|PO-202608-1211|ASN-WH-YQF-2011|SUP-101|Prairie Industrial Supply|Red Deer|SKU-1003|30|30|30|0|42.75|2026-08-03|2026-08-08|2026-08-05|2026-08-09|Partial|Prairie Haul|D-01|Pallet wrap damaged
+RCV-WH-YQF-013|PO-202608-1213|ASN-WH-YQF-2013|SUP-103|Rocky Mountain Packaging|Red Deer|SKU-1005|100|105|102|2|88.4|2026-08-09|2026-08-16|2026-08-11|2026-08-16|Rejected|TransWest Logistics|D-07|Count verified
+RCV-WH-YQF-014|PO-202608-1214|ASN-WH-YQF-2014|SUP-104|Westline Safety Products|Red Deer|SKU-1006|30|30|30|1|25.0|2026-08-07|2026-08-13|2026-08-10|2026-08-14|Partial|Arctic Route Transport|D-05|Seal intact
+RCV-WH-YQF-016|PO-202608-1216|ASN-WH-YQF-2016|SUP-101|Prairie Industrial Supply|Red Deer|SKU-1008|100|95|95|1|88.4|2026-08-03|2026-08-06|2026-08-05|2026-08-08|Partial|Prairie Haul|D-04|Late carrier arrival
+RCV-WH-YQF-017|PO-202608-1217|ASN-WH-YQF-2017|SUP-102|Northern Components Ltd|Red Deer|SKU-1001|50|50|50|0|18.9|2026-08-03|2026-08-08|2026-08-04|2026-08-08|Partial|NorthLine Freight|D-06|
+RCV-WH-YQF-019|PO-202608-1219|ASN-WH-YQF-2019|SUP-104|Westline Safety Products|Red Deer|SKU-1003|30|30|27|0|7.5|2026-08-07|2026-08-13|2026-08-08|2026-08-14|Rejected|TransWest Logistics|D-02|Seal intact
+RCV-WH-YQF-020|PO-202608-1220|ASN-WH-YQF-2020|SUP-105|Aurora Equipment Parts|Red Deer|SKU-1004|100|95|95|0|25.0|2026-08-08|2026-08-12|2026-08-11|2026-08-12|Received|Arctic Route Transport|D-08|Count verified
+RCV-WH-YQF-020|PO-202608-1221|ASN-WH-YQF-2021|SUP-101|Prairie Industrial Supply|Red Deer|SKU-1005|40|40|40|0|4.75|2026-08-01|2026-08-08|2026-08-02|2026-08-08|Received|NorthLine Freight|D-05|Late carrier arrival
+RCV-WH-YQF-022|PO-202608-1222|ASN-WH-YQF-2022|SUP-102|Northern Components Ltd|Red Deer|SKU-1006|20|20|20|0|88.4|2026-08-02|2026-08-06|2026-08-05|2026-08-06|Received|Arctic Route Transport|D-08|Pallet wrap damaged

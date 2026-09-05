@@ -30,6 +30,9 @@ RUN_SUMMARIES_DIR = BASE_DIR / get_env_variables("RUN_SUMMARIES_DIR")
 LOG_FOLDER = BASE_DIR / "logs"
 LOG_FILE = LOG_FOLDER / "inbounds_pipeline.log"
 
+OUTPUT_DELIMITER = "|"
+PIPELINE_NAME = "Inbound_receiving_asn_compliance_pipeline"
+
 FILE_PATTERN = get_env_variables("FILE_PATTERN")
 
 REQUIRED_FIELDS = [
@@ -54,4 +57,163 @@ ALLOWED_RECEIPT_STATUS = [
     "Received",
     "Partial",
     "Rejected",
+]
+
+VALID_COLUMNS = [
+    "receipt_id",
+    "purchase_order_id",
+    "asn_id",
+    "supplier_id",
+    "supplier_name",
+    "warehouse",
+    "sku",
+    "ordered_qty",
+    "shipped_qty",
+    "received_qty",
+    "damaged_qty",
+    "unit_cost",
+    "order_date",
+    "promised_delivery_date",
+    "ship_date",
+    "receipt_date",
+    "receipt_status",
+    "carrier",
+    "dock_door",
+    "notes",
+]
+
+INVALID_COLUMNS = [
+    "receipt_id",
+    "purchase_order_id",
+    "asn_id",
+    "supplier_id",
+    "supplier_name",
+    "warehouse",
+    "sku",
+    "ordered_qty",
+    "shipped_qty",
+    "received_qty",
+    "damaged_qty",
+    "unit_cost",
+    "order_date",
+    "promised_delivery_date",
+    "ship_date",
+    "receipt_date",
+    "receipt_status",
+    "carrier",
+    "dock_door",
+    "notes",
+    "error_reasons",
+]
+
+DUPLICATES_COLUMNS = [
+    "receipt_id",
+    "purchase_order_id",
+    "asn_id",
+    "supplier_id",
+    "supplier_name",
+    "warehouse",
+    "sku",
+    "ordered_qty",
+    "shipped_qty",
+    "received_qty",
+    "damaged_qty",
+    "unit_cost",
+    "order_date",
+    "promised_delivery_date",
+    "ship_date",
+    "receipt_date",
+    "receipt_status",
+    "carrier",
+    "dock_door",
+    "notes",
+    "duplicates",
+]
+
+TRANSFORMED_COLUMNS = [
+    "receipt_id",
+    "purchase_order_id",
+    "asn_id",
+    "supplier_id",
+    "supplier_name",
+    "warehouse",
+    "sku",
+    "ordered_qty",
+    "shipped_qty",
+    "received_qty",
+    "damaged_qty",
+    "unit_cost",
+    "order_date",
+    "promised_delivery_date",
+    "ship_date",
+    "receipt_date",
+    "receipt_status",
+    "carrier",
+    "dock_door",
+    "notes",
+    "ordered_value",
+    "received_value",
+    "quantity_variance",
+    "fill_rate_pct",
+    "damaged_rate_pct",
+    "delivery_variance",
+    "delivery_performance",
+    "received_performance",
+    "compliance_status",
+]
+
+SUPPLIER_DIGEST_COLUMNS = [
+    "supplier_id",
+    "supplier_name",
+    "receipt_count",
+    "tot_ordered_qty",
+    "tot_received_qty",
+    "tot_ordered_value",
+    "tot_received_value",
+    "tot_damaged_qty",
+    "average_fill_rate_pct",
+    "damage_rate_pct",
+    "late_receipt_count",
+    "compliant_receipt_count",
+]
+
+WAREHOUSE_DIGEST_COLUMNS = [
+    "warehouse",
+    "receipts_count",
+    "tot_ordered_qty",
+    "tot_received_qty",
+    "tot_damaged_qty",
+    "fill_rate_pct",
+    "damage_rate_pct",
+    "late_receipts",
+]
+
+FILE_METRICS_COLUMN = [
+    "run_id",
+    "file_name",
+    "status",
+    "raw_count",
+    "valid_count",
+    "invalid_count",
+    "duplicate_count",
+    "transformed_count",
+    "supplier_digest_count",
+    "warehouse_digest_count",
+    "error_type",
+    "error_message",
+    "duration",
+]
+
+PIPELINE_METRICS_COLUMN = [
+    "run_id",
+    "total_files",
+    "succesful_files",
+    "failed_files",
+    "pipeline_status",
+    "total_raw_records",
+    "total_valid_records",
+    "total_invalid_records",
+    "total_duplicates_records",
+    "total_transformed_records",
+    "total_summary_count",
 ]

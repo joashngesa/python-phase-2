@@ -1,0 +1,2 @@
+receipt_id|purchase_order_id|asn_id|supplier_id|supplier_name|warehouse|sku|ordered_qty|shipped_qty|received_qty|damaged_qty|unit_cost|order_date|promised_delivery_date|ship_date|receipt_date|receipt_status|carrier|dock_door|notes|duplicates
+RCV-WH-YQF-020|PO-202608-1221|ASN-WH-YQF-2021|SUP-101|Prairie Industrial Supply|Red Deer|SKU-1005|40|40|40|0|4.75|2026-08-01|2026-08-08|2026-08-02|2026-08-08|Received|NorthLine Freight|D-05|Late carrier arrival|duplicate receipt_id

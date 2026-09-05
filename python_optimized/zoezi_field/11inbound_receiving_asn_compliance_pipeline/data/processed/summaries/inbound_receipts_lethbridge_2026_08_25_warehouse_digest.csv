@@ -1,0 +1,3 @@
+warehouse|receipts_count|tot_ordered_qty|tot_received_qty|tot_damaged_qty|fill_rate_pct|damage_rate_pct|late_receipts
+Lethbridge|16|700|685|13|97.86|1.9|5
+Calgary|1|40|40|1|100.0|2.5|1

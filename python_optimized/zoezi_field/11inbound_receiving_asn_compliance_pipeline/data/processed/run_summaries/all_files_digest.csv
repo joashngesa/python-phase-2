@@ -1,0 +1,8 @@
+run_id|file_name|status|raw_count|valid_count|invalid_count|duplicate_count|transformed_count|supplier_digest_count|warehouse_digest_count|error_type|error_message|duration
+inbound_20260905T050036Z|inbound_receipts_calgary_2026_08_25.json|completed with invalid & duplicates|22|17|5|1|17|5|1|||0.006031675002304837
+inbound_20260905T050036Z|inbound_receipts_edmonton_2026_08_25.json|completed with invalids|22|15|7|0|15|5|1|||0.0030321909980557393
+inbound_20260905T050036Z|inbound_receipts_fort_mcmurray_2026_08_25.json|completed with invalids|22|19|3|0|19|5|1|||0.0033901389979291707
+inbound_20260905T050036Z|inbound_receipts_grande_prairie_2026_08_25.json|Invalid value during Reading|0|0|0|0|0|0|0|JSONDecodeError|Expecting ',' delimiter: line 244 column 3 (char 7087)|0.0001782889994501602
+inbound_20260905T050036Z|inbound_receipts_lethbridge_2026_08_25.json|completed with invalids|22|17|5|0|17|5|2|||0.00449910699899192
+inbound_20260905T050036Z|inbound_receipts_medicine_hat_2026_08_25.json|unexpected data type in Reading|0|0|0|0|0|0|0|TypeError|inbound_receipts_medicine_hat_2026_08_25.json is expecting a list|0.0005031719992985018
+inbound_20260905T050036Z|inbound_receipts_red_deer_2026_08_25.json|completed with invalid & duplicates|22|16|6|1|16|5|1|||0.00467090699748951

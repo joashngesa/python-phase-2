@@ -1,0 +1,2 @@
+run_id|file_name|status|raw_count|valid_count|invalid_count|duplicate_count|transformed_count|supplier_digest_count|warehouse_digest_count|error_type|error_message|duration
+inbound_20260905T050036Z|inbound_receipts_lethbridge_2026_08_25.json|completed with invalids|22|17|5|0|17|5|2|||0.00449910699899192

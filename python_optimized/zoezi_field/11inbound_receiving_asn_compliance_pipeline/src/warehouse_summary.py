@@ -1,6 +1,12 @@
+import logging
+
+logger = logging.getLogger(__name__)
+
+
 def warehouse_synopsis(transformed):
 
     whse_summary = {}
+    logger.info("Warehouse summary initiated")
 
     for procure in transformed:
 
@@ -51,5 +57,7 @@ def warehouse_synopsis(transformed):
             buy["damage_rate_pct"] = None
 
     summary = list(whse_summary.values())
+
+    logger.info("Warehouse summary completed | warehouse_digest_count=%d", len(summary))
 
     return summary
